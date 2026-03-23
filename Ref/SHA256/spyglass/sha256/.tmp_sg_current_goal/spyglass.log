@@ -1,0 +1,25 @@
+SpyGlass run started at 10:16:33  on 9 15 2023 
+
+SpyGlass Predictive Analyzer(R) - Version SpyGlass_vL-2016.06
+Last compiled on May 20 2016
+
+All Rights Reserved. Use, disclosure or duplication
+without prior written permission of Synopsys Inc. is prohibited.
+Technical support: email spyglass_support@synopsys.com.
+
+Loading Policy: spyglass (Version: SpyGlass_vL-2016.06) from path: /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/policies/spyglass
+Loading Shared library libspyglassrules-Linux4.spyso from /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libspyglassrules-Linux4.spyso 
+Loading Shared library libsdcInitRules-Linux4.spyso from /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libsdcInitRules-Linux4.spyso 
+Loading Shared library librmerules-Linux4.spyso from /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/lib/librmerules-Linux4.spyso 
+Loading perl file for 'auto-verify' policy from path: /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/policies/auto-verify/auto-verify-policy.pl
+Loading Shared library libformalRules-Linux4.spyso from /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/policies/auto-verify/libformalRules-Linux4.spyso 
+Version of Policy 'auto-verify': SpyGlass_vL-2016.06
+Loading Shared library libVeStarc-Linux4.spyso from /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/policies/starc/libVeStarc-Linux4.spyso 
+Loading Shared library libVeLint-Linux4.spyso from /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libVeLint-Linux4.spyso 
+Loading Shared library libCoreRules-Linux4.spyso from /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libCoreRules-Linux4.spyso 
+Loading Shared library libVeMoreLint-Linux4.spyso from /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/policies/morelint/libVeMoreLint-Linux4.spyso 
+Loading Shared library libVhMoreLint-Linux4.spyso from /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/policies/morelint/libVhMoreLint-Linux4.spyso 
+ Reading sgdc file "./scr/design.sgdc" ...
+ Reading sgdc file "/home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/auxi/policy_data/auto-verify/verif.sgdc" ...
+ Reading waiver file "./sha256/sha256/adv_lint/adv_lint_verify/spyglass_spysch/waiver/pragma2Waiver.swl" ...
+ Reading included SGDC file "./sha256/sha256/adv_lint/adv_lint_verify/spyglass_spysch/waiver/pragma2Waiver_varfile.swl" ....

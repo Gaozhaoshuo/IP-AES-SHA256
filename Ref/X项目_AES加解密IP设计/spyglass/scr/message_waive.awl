@@ -1,0 +1,3 @@
+waive -rule Ar_unsync01
+waive -rule Setup_port01
+

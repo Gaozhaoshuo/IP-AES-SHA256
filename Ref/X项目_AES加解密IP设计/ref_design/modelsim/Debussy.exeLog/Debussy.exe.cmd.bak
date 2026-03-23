@@ -1,0 +1,611 @@
+srcSourceCodeView
+debImport "-f" "flist.f" "-2001" "-top" "tb_aes"
+srcResizeWindow 109 77 1778 987
+srcHBSelect "tb_aes.dut" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut" -delim "."
+srcHBSelect "tb_aes.dut.core" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "sbox_inst" -win $_nTrace1
+srcAction -pos 171 3 4 -win $_nTrace1 -name "sbox_inst" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcAction -pos 41 2 2 -win $_nTrace1 -name "aes_sbox" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcAction -pos 171 8 4 -win $_nTrace1 -name "muxed_sboxw" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcAction -pos 171 8 3 -win $_nTrace1 -name "muxed_sboxw" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "key" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "key" -win $_nTrace1
+srcAction -pos 158 4 1 -win $_nTrace1 -name "key" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcSearchString "enc" -win $_nTrace1 -next -case
+srcSelect -win $_nTrace1 -range {215 215 2 2 26 29}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_new_block" -win $_nTrace1
+srcAction -pos 178 7 12 -win $_nTrace1 -name "muxed_new_block" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "init_state" -win $_nTrace1
+srcAction -pos 282 1 3 -win $_nTrace1 -name "init_state" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "aes_core_ctrl_reg" -win $_nTrace1
+srcAction -pos 277 4 8 -win $_nTrace1 -name "aes_core_ctrl_reg" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "aes_core_ctrl_we" -win $_nTrace1
+srcAction -pos 205 4 6 -win $_nTrace1 -name "aes_core_ctrl_we" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "aes_core_ctrl_we" -win $_nTrace1
+srcAction -pos 205 4 6 -win $_nTrace1 -name "aes_core_ctrl_we" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready_we" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "result_valid_new" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "result_valid_we" -win $_nTrace1
+srcTraceLoad "tb_aes.dut.core.result_valid_we" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_aes.dut" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut" -delim "."
+srcHBSelect "tb_aes.dut.core" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "init" -win $_nTrace1
+srcAction -pos 46 5 1 -win $_nTrace1 -name "init" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "init_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "encdec_reg" -win $_nTrace1
+srcAction -pos 140 7 5 -win $_nTrace1 -name "encdec_reg" -ctrlKey off
+srcNextTraced
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcHBSelect "tb_aes.dut.core" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_ready" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_ready" -win $_nTrace1
+srcAction -pos 319 4 7 -win $_nTrace1 -name "muxed_ready" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "enc_ready" -win $_nTrace1
+srcAction -pos 247 5 5 -win $_nTrace1 -name "enc_ready" -ctrlKey off
+srcHBSelect "tb_aes.dut.core.enc_block" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core.enc_block" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_key" -win $_nTrace1
+srcAction -pos 50 13 6 -win $_nTrace1 -name "round_key" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tmp_round_key" -win $_nTrace1
+srcAction -pos 120 7 6 -win $_nTrace1 -name "tmp_round_key" -ctrlKey off
+srcHBSelect "tb_aes.dut.core.keymem" -win $_nTrace1
+srcHBSelect "tb_aes.dut.core.keymem" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core.keymem" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "new_sboxw" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "new_sboxw" -win $_nTrace1
+srcAction -pos 54 13 3 -win $_nTrace1 -name "new_sboxw" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sboxw" -win $_nTrace1
+srcAction -pos 53 13 1 -win $_nTrace1 -name "sboxw" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "prev_key0_new" -win $_nTrace1
+srcAction -pos 81 11 9 -win $_nTrace1 -name "prev_key0_new" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "prev_key0_reg" -win $_nTrace1
+srcAction -pos 80 11 12 -win $_nTrace1 -name "prev_key0_reg" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rcon_reg" -win $_nTrace1
+srcAction -pos 102 11 6 -win $_nTrace1 -name "rcon_reg" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tmp_round_key" -win $_nTrace1
+srcTraceLoad "tb_aes.dut.core.keymem.tmp_round_key\[127:0\]" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 227 5 3 -win $_nTrace1 -name "rotstw" -ctrlKey off
+srcSearchString "rotstw" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {227 227 2 3 1 1}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "new_sboxw\[31 : 24\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "new_sboxw\[31 : 24\]" -win $_nTrace1
+srcAction -pos 226 9 6 -win $_nTrace1 -name "new_sboxw\[31 : 24\]" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "prev_key0_reg\[031 : 000\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "prev_key0_reg\[031 : 000\]" -win $_nTrace1
+srcAction -pos 217 5 7 -win $_nTrace1 -name "prev_key0_reg\[031 : 000\]" -ctrlKey \
+          off
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "prev_key0_new" -win $_nTrace1
+srcAction -pos 163 5 6 -win $_nTrace1 -name "prev_key0_new" -ctrlKey off
+srcNextTraced
+srcPrevTraced
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_reg" -win $_nTrace1
+srcAction -pos 267 6 6 -win $_nTrace1 -name "round_ctr_reg" -ctrlKey off
+srcNextTraced
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_reg" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcForwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_reg" -win $_nTrace1
+srcAction -pos 267 6 11 -win $_nTrace1 -name "round_ctr_reg" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_new" -win $_nTrace1
+srcAction -pos 157 5 9 -win $_nTrace1 -name "round_ctr_new" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tw" -win $_nTrace1
+srcTraceLoad "tb_aes.dut.core.keymem.round_key_gen.tw\[31:0\]" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_key_update" -win $_nTrace1
+srcAction -pos 231 4 10 -win $_nTrace1 -name "round_key_update" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_reg" -win $_nTrace1
+srcAction -pos 238 4 6 -win $_nTrace1 -name "round_ctr_reg" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_key_update" -win $_nTrace1
+srcAction -pos 231 4 8 -win $_nTrace1 -name "round_key_update" -ctrlKey off
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rcon_next" -win $_nTrace1
+srcTraceLoad "tb_aes.dut.core.keymem.rcon_next" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rcon_set" -win $_nTrace1
+srcAction -pos 323 4 6 -win $_nTrace1 -name "rcon_set" -ctrlKey off
+srcNextTraced
+srcPrevTraced
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rcon_new" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 247 9 1 -win $_nTrace1 -name "trw" -ctrlKey off
+srcSearchString "trw" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {228 228 2 3 1 1}
+srcSearchString "trw" -win $_nTrace1 -next -case
+srcSelect -win $_nTrace1 -range {248 248 10 11 1 1}
+srcSearchString "trw" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {228 228 2 3 1 1}
+srcSearchString "trw" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {195 195 21 22 1 1}
+srcSearchString "trw" -win $_nTrace1 -next -case
+srcSelect -win $_nTrace1 -range {228 228 2 3 1 1}
+srcSearchString "trw" -win $_nTrace1 -next -case
+srcSelect -win $_nTrace1 -range {248 248 10 11 1 1}
+srcDeselectAll -win $_nTrace1
+srcAction -pos 247 5 0 -win $_nTrace1 -name "w4" -ctrlKey off
+srcSearchString "w4" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {220 220 2 3 1 1}
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 278 9 2 -win $_nTrace1 -name "trw" -ctrlKey off
+srcSearchString "trw" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {251 251 22 23 1 1}
+srcSearchString "trw" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {250 250 18 19 1 1}
+srcSearchString "trw" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {249 249 14 15 1 1}
+srcSearchString "trw" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {248 248 10 11 1 1}
+srcSearchString "trw" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {228 228 2 3 1 1}
+srcDeselectAll -win $_nTrace1
+srcAction -pos 278 5 1 -win $_nTrace1 -name "w0" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "prev_key1_new" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSearchString "rcon_next" -win $_nTrace1 -next -case
+srcSelect -win $_nTrace1 -range {290 290 2 3 1 1}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rcon_next" -win $_nTrace1
+srcAction -pos 289 1 5 -win $_nTrace1 -name "rcon_next" -ctrlKey off
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rcon_next" -win $_nTrace1
+srcTraceLoad "tb_aes.dut.core.keymem.rcon_next" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rcon_we" -win $_nTrace1
+srcTraceLoad "tb_aes.dut.core.keymem.rcon_we" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_we" -win $_nTrace1
+srcAction -pos 156 4 6 -win $_nTrace1 -name "round_ctr_we" -ctrlKey off
+srcNextTraced
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_inc" -win $_nTrace1
+srcAction -pos 353 6 8 -win $_nTrace1 -name "round_ctr_inc" -ctrlKey off
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_inc" -win $_nTrace1
+srcAction -pos 406 1 10 -win $_nTrace1 -name "round_ctr_inc" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_inc" -win $_nTrace1
+srcAction -pos 406 1 9 -win $_nTrace1 -name "round_ctr_inc" -ctrlKey off
+srcHBSelect "tb_aes.dut.core.keymem" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core.keymem" -delim "."
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready" -win $_nTrace1
+srcAction -pos 50 5 2 -win $_nTrace1 -name "ready" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready_reg" -win $_nTrace1
+srcAction -pos 121 7 5 -win $_nTrace1 -name "ready_reg" -ctrlKey off
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready_new" -win $_nTrace1
+srcAction -pos 151 5 2 -win $_nTrace1 -name "ready_new" -ctrlKey off
+srcNextTraced
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready_we" -win $_nTrace1
+srcAction -pos 418 1 5 -win $_nTrace1 -name "ready_we" -ctrlKey off
+srcPrevTraced
+srcPrevTraced
+srcNextTraced
+srcNextTraced
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_aes.dut.core.keymem" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core.keymem" -delim "."
+srcDeselectAll -win $_nTrace1
+srcAction -pos 40 2 5 -win $_nTrace1 -name "aes_key_mem" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcHBSelect "tb_aes.dut.core.enc_block" -win $_nTrace1
+srcHBSelect "tb_aes.dut.core.enc_block" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core.enc_block" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "AES128_ROUNDS" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "AES256_ROUNDS" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "MAIN_UPDATE" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "FINAL_UPDATE" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {128 128 1 11 6 1} -backward
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {143 143 7 9 1 1}
+srcResizeWindow -7 0 1038 1119
+srcDeselectAll -win $_nTrace1
+srcResizeWindow -7 0 1295 1119
+srcDeselectAll -win $_nTrace1
+srcResizeWindow -7 0 1484 1119
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sboxw" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcAction -pos 203 7 6 -win $_nTrace1 -name "muxed_sboxw" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_w3_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_w2_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_w1_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_w0_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "new_block" -win $_nTrace1
+srcTraceLoad "tb_aes.dut.core.enc_block.new_block\[127:0\]" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_w0_we" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_w3_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_new\[031 : 000\]" -win $_nTrace1
+srcAction -pos 240 5 7 -win $_nTrace1 -name "block_new\[031 : 000\]" -ctrlKey off
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "addkey_init_block" -win $_nTrace1
+srcAction -pos 284 5 7 -win $_nTrace1 -name "addkey_init_block" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block" -win $_nTrace1
+srcAction -pos 277 7 1 -win $_nTrace1 -name "block" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_reg\[0\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_reg\[2\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_reg\[3\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_reg\[0\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_reg\[0\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_reg\[0\]" -win $_nTrace1
+srcAction -pos 136 8 7 -win $_nTrace1 -name "block_reg\[0\]" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 277 5 6 -win $_nTrace1 -name "addroundkey" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {138 138 2 6 2 14}
+srcResizeWindow -507 12 1778 987
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+debReload
+srcSelect -win $_nTrace1 -range {152 152 12 13 1 1}
+debReload
+srcSelect -win $_nTrace1 -range {152 152 12 13 1 1}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_w0_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ready_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_w0_we" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_new\[127 : 096\]" -win $_nTrace1
+srcAction -pos 231 5 4 -win $_nTrace1 -name "block_new\[127 : 096\]" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_new" -win $_nTrace1
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_reg" -win $_nTrace1
+srcShowSignalDefine -win $_nTrace1
+srcSelect -win $_nTrace1 -range {162 162 12 13 1 1}
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mixcolumns_block" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "addkey_init_block" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mixcolumns_block" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "addkey_main_block" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mixcolumns_block" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "mixcolumns_block" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "shiftrows_block" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "old_block" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "addkey_init_block" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "addkey_init_block" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "new_sboxw" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "new_sboxw" -win $_nTrace1
+srcAction -pos 293 15 3 -win $_nTrace1 -name "new_sboxw" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_w0_reg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_new\[031 : 000\]" -win $_nTrace1
+srcAction -pos 240 5 4 -win $_nTrace1 -name "block_new\[031 : 000\]" -ctrlKey off
+srcNextTraced
+srcNextTraced
+srcTraceLoad "tb_aes.dut.core.enc_block.block_new\[127:0\]" -win $_nTrace1
+srcNextTraced
+srcNextTraced
+srcNextTraced
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_new" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_we" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_rst" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_we" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_we" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_new" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_we" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_new" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_new" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_new" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_new" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sword_ctr_new" -win $_nTrace1
+srcAction -pos 354 1 4 -win $_nTrace1 -name "sword_ctr_new" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 278 7 4 -win $_nTrace1 -name "mixcolumns_block" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcAction -pos 279 7 5 -win $_nTrace1 -name "shiftrows_block" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "update_type" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "update_type" -win $_nTrace1
+srcAction -pos 281 4 7 -win $_nTrace1 -name "update_type" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcForwardHistory -win $_nTrace1
+debReload
+srcSelect -win $_nTrace1 -range {400 400 5 6 1 1}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "enc_ctrl_we" -win $_nTrace1
+srcTraceLoad "tb_aes.dut.core.enc_block.enc_ctrl_we" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "num_rounds" -win $_nTrace1
+srcAction -pos 400 11 5 -win $_nTrace1 -name "num_rounds" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_reg" -win $_nTrace1
+srcAction -pos 459 4 4 -win $_nTrace1 -name "round_ctr_reg" -ctrlKey off
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_we" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_new" -win $_nTrace1
+srcAction -pos 246 5 4 -win $_nTrace1 -name "round_ctr_new" -ctrlKey off
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "round_ctr_inc" -win $_nTrace1
+srcAction -pos 385 6 8 -win $_nTrace1 -name "round_ctr_inc" -ctrlKey off
+srcNextTraced
+srcNextTraced
+debReload
+srcSelect -win $_nTrace1 -range {400 400 5 6 1 1}
+srcHBSelect "tb_aes.dut.core.enc_block" -win $_nTrace1
+srcHBSelect "tb_aes.dut.core.sbox_mux" -win $_nTrace1
+srcHBSelect "tb_aes.dut.core.sbox_inst" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core.sbox_inst" -delim "."
+srcDeselectAll -win $_nTrace1
+srcAction -pos 41 2 5 -win $_nTrace1 -name "aes_sbox" -ctrlKey off
+srcHBSelect "tb_aes.dut.core.dec_block" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core.dec_block" -delim "."
+srcHBSelect "tb_aes.dut.core.dec_block.inv_sbox_inst" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core.dec_block.inv_sbox_inst" -delim "."
+debReload
+srcSelect -win $_nTrace1 -range {40 40 3 4 1 1}
+srcViewImportLogFile
+srcDeselectAll -win $_nTrace2
+srcDeselectAll -win $_nTrace2
+srcDeselectAll -win $_nTrace2
+srcDeselectAll -win $_nTrace2
+debReload
+srcSelect -win $_nTrace1 -range {40 40 3 4 1 1}
+debReload
+srcSelect -win $_nTrace1 -range {40 40 3 4 1 1}
+srcCloseWindow -win $_nTrace2
+srcHBSelect "tb_aes.dut.core.dec_block.inv_mixw" -win $_nTrace1
+srcHBSelect "tb_aes.dut.core.dec_block.inv_sbox_inst" -win $_nTrace1
+srcHBSelect "tb_aes.dut.core.dec_block" -win $_nTrace1
+srcHBSelect "tb_aes.dut.core.sbox_inst" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core.sbox_inst" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sboxw" -win $_nTrace1
+srcAction -pos 42 13 2 -win $_nTrace1 -name "sboxw" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "enc_sboxw" -win $_nTrace1
+srcAction -pos 226 5 6 -win $_nTrace1 -name "enc_sboxw" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcShowSignalDefine -win $_nTrace1
+srcSelect -win $_nTrace1 -range {198 198 12 13 1 1}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sboxw" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sboxw" -win $_nTrace1
+srcShowSignalDefine -win $_nTrace1
+srcSelect -win $_nTrace1 -range {53 53 1 16 1 1}
+srcDeselectAll -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_aes.dut.core.sbox_mux" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_aes.dut.core.sbox_mux" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "enc_sboxw" -win $_nTrace1
+srcAction -pos 226 5 5 -win $_nTrace1 -name "enc_sboxw" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcAction -pos 204 7 6 -win $_nTrace1 -name "muxed_sboxw" -ctrlKey off
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "block_w0_reg" -win $_nTrace1
+srcAction -pos 328 6 5 -win $_nTrace1 -name "block_w0_reg" -ctrlKey off
+srcNextTraced
+srcBackwardHistory -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "enc_sboxw" -win $_nTrace1
+srcAction -pos 226 5 4 -win $_nTrace1 -name "enc_sboxw" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "muxed_sboxw" -win $_nTrace1
+srcAction -pos 204 7 3 -win $_nTrace1 -name "muxed_sboxw" -ctrlKey off
+srcNextTraced
+srcPrevTraced
+srcNextTraced
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "new_sboxw" -win $_nTrace1
+srcAction -pos 276 5 2 -win $_nTrace1 -name "new_sboxw" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+debReload
+srcSelect -win $_nTrace1 -range {265 265 6 7 1 1}
+debExit

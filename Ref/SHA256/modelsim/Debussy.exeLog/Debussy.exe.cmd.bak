@@ -1,0 +1,13 @@
+srcSourceCodeView
+debImport "-f" "flist.f" "-2001" "-top" "tb"
+srcResizeWindow 157 333 804 500
+srcSetPreference -font "Fixed 20" -tabSize 4
+TDPreferences -snapToTransition on
+srcResizeWindow 227 0 1462 1119
+debReload
+srcHBSelect "sha256" -win $_nTrace1
+srcSelect -win $_nTrace1 -range {25 25 3 4 1 1}
+srcResizeWindow 227 13 1462 1094
+srcDeselectAll -win $_nTrace1
+srcResizeWindow 227 56 1462 1051
+debExit

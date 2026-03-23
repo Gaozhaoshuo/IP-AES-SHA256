@@ -1,0 +1,13 @@
+#x STXT_BEGIN ST.1
+WF-SIG-FILE=================
+./sha256/sha256/lint/lint_turbo_rtl/spyglass_reports/auto-verify/VCD/Av_width_mismatch_assign.1.1.vcd.sig
+WF-MARKER: -name:Failure @@ -time_stamp:35000.000000
+SIG_PROP:-name: sha256.u_sha256_axir.nxt_blk_len@@-color:19@@-tooltip:Data Path Net nxt_blk_len
+SIG_PROP:-name: sha256.clk@@-color:19@@-tooltip:Clock Net clk
+SIG_PROP:-name: sha256.u_sha256_axir.rtlc_N259@@-color:19@@-tooltip:Internal Enable Net rtlc_N259
+WF-VCD-FILE=================
+./sha256/sha256/lint/lint_turbo_rtl/spyglass_reports/auto-verify/VCD/Av_width_mismatch_assign.1.1.vcd
+#x STXT_END ST.1
+#x STXT_BEGIN ST.2
+#x STXT_END ST.2
+#x STXT_BEGIN ST.3

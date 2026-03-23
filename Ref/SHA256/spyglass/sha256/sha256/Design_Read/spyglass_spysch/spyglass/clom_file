@@ -1,0 +1,52 @@
+##This file is genrated to have command line decompiled Info even in Console
+##(To generate SIGN_OFF report having command line decompiled)
+Run Setup Info
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Option          Value             Origin  File                           LineNo
+===============================================================================
+--goal_info     Design_Read@      CmdLine -                              -
+--strict_sgdc_check <ON>              Config  $SPYGLASS_HOME/.spyglass.setup 39
+-64bit          <ON>              CmdLine -                              -
+-awl            ./scr/message_waive.awl CmdLine -                              -
+-batch          <ON>              CmdLine -                              -
+-inferblackbox  <ON>              Config  $SPYGLASS_HOME/.spyglass.setup 29
+-lib            WORK=>./sha256/sha256/WORK CmdLine -                              -
+                SYNOPSYS=>$SPYGLASS_HOME/vhdl_libs/Linux4/SYNOPSYS Config  $SPYGLASS_HOME/.spyglass.setup 25
+-mixed          <ON>              CmdLine -                              -
+-nl             <ON>              CmdLine -                              -
+-policy         none              CmdFile $SPYGLASS_HOME/auxi/policy_data/spyglass/design_read/Design_Read-mixed.spq 1
+-projectwdir    ./sha256          CmdLine -                              -
+-report         moresimple        Config  $SPYGLASS_HOME/.spyglass.setup 17
+-sgdc           ./scr/design.sgdc CmdLine -                              -
+-sortmethod     du                Config  $SPYGLASS_HOME/.spyglass.setup 27
+-template       Design_Read       CmdLine -                              -
+-templatedir    /home/yyx/eda/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME/auxi/policy_data/spyglass/design_read CmdLine -                              -
+-top            sha256            CmdLine -                              -
+-wdir           ./sha256/sha256/Design_Read CmdLine -                              -
+<design_files>  ../rtl/sha256.v   APICall -                              -
+                ../rtl/sha256_axir.v APICall -                              -
+                ../rtl/sha256_cfg.v APICall -                              -
+                ../rtl/sha256_core.v APICall -                              -
+                ../rtl/sha256_flow_ctl.v APICall -                              -
+                ../rtl/sha256_k_lut.v APICall -                              -
+                ../rtl/sha256_loop.v APICall -                              -
+                ../rtl/sha256_w_reg.v APICall -                              -
+                ../rtl/sync_fifo.v APICall -                              -
+
+
+Rules Parameter
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Parameter       Origin  File                           LineNo
+===============================================================================
+
+
+Policy Info
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+NameOfPolicy    VersionNumber   Path (from where policy loaded)
+===============================================================================
+spyglass        SpyGlass_vL-2016.06 $SPYGLASS_HOME/policies/spyglass
+
+

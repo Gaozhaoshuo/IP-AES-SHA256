@@ -1,0 +1,11 @@
+SpyGlass Predictive Analyzer(R) - SpyGlass_vL-2016.06
+All Rights Reserved. Use, disclosure or duplication 
+without prior written permission of Synopsys Inc. is prohibited.
+Technical support: email spyglass_support@synopsys.com 
+
+Creating 'datasheet' reports using config file '/tmp/config_21808'
+##cwd         : /media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass
+##system      : Linux yyx-linux 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+##Date & Time : Fri Sep 15 10:18:08 2023
+Error: Failed to checkout license feature 'datasheet'
+Report creation failed.

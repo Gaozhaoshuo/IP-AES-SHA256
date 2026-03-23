@@ -1,0 +1,30 @@
+source ./scr/main.tcl 
+
+
+
+
+
+
+
+
+
+current_goal lint/lint_rtl -top aes_top
+
+
+current_goal lint/lint_turbo_rtl -top aes_top
+
+
+gui_select_message -rule CheckDelayTimescale-ML -msg {Delay used without timescale compiler directive}
+gui_select_message -rule Av_width_mismatch_assign -msg {LHS: 'blk_len' width 32 is less than RHS: 'nxt_blk_len' width 33 in assignment [Hierarchy: 'aes_top.u_aes_axir']}
+current_goal lint/lint_functional_rtl -top aes_top
+
+
+current_goal lint/lint_abstract -top aes_top
+
+
+current_goal adv_lint/adv_lint_struct -top aes_top
+
+
+save_project
+gui_exit
+gui_exit

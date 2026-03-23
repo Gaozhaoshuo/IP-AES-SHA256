@@ -1,0 +1,89 @@
+ 
+****************************************
+Report : design
+Design : sha256
+Version: O-2018.06-SP1
+Date   : Fri Sep 15 10:31:35 2023
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    slow (File: /home/yyx/proj/libs/TSMC_013/synopsys/slow.db)
+
+Local Link Library:
+
+    {slow.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : slow
+    Library : slow
+    Process :   1.00
+    Temperature : 125.00
+    Voltage :   1.08
+    Interconnect Model : balanced_tree
+
+Min Operating Conditions:
+
+
+    Operating Condition Name : fast
+    Library : fast
+    Process :   1.00
+    Temperature : -40.00
+    Voltage :   1.32
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   ForQA
+Location       :   slow
+Resistance     :   0
+Capacitance    :   1
+Area           :   1
+Slope          :   1
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.00
+    10     0.00
+
+
+
+Wire Loading Model Mode: enclosed.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1

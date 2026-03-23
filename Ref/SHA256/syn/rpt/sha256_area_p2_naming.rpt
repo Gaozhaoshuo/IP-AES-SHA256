@@ -1,0 +1,92 @@
+ 
+****************************************
+Report : area
+Design : sha256
+Version: O-2018.06-SP1
+Date   : Fri Sep 15 10:31:35 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/yyx/proj/libs/TSMC_013/synopsys/slow.db)
+
+Number of ports:                         3202
+Number of nets:                         11014
+Number of cells:                         7780
+Number of combinational cells:           5934
+Number of sequential cells:              1797
+Number of macros/black boxes:               0
+Number of buf/inv:                       1217
+Number of references:                       9
+
+Combinational area:              49575.961595
+Buf/Inv area:                     5054.857120
+Noncombinational area:           47398.198233
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1669.000000
+
+Total cell area:                 96974.159827
+Total area:                      98643.159827
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------------------------------------------
+sha256                            96974.1598    100.0    118.8180      0.0000  0.0000  sha256
+u_sha256_axir                      5272.1244      5.4   1419.0264   2172.6721  0.0000  sha256_axir
+u_sha256_axir/DP_OP_47J2_123_7638  1617.6222      1.7   1617.6222      0.0000  0.0000  sha256_axir_DP_OP_47J2_123_7638_0
+u_sha256_axir/clk_gate_axi_addr_reg    32.2506     0.0    15.2766     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sha256_axir_2
+u_sha256_axir/clk_gate_cmd1_len_reg_0    30.5532     0.0    13.5792    16.9740 0.0000  SNPS_CLOCK_GATE_HIGH_sha256_axir_1
+u_sha256_cfg                       6372.0395      6.6   2503.6650   3695.2397  0.0000  sha256_cfg
+u_sha256_cfg/clk_gate_cfg_blk_base_reg    32.2506     0.0    15.2766    16.9740 0.0000 SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_53
+u_sha256_cfg/clk_gate_cfg_blk_len_reg    39.0402     0.0    22.0662    16.9740 0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_52
+u_sha256_cfg/clk_gate_ml             39.0402      0.0     22.0662     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_50
+u_sha256_cfg/clk_gate_ml_0           30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_51
+u_sha256_cfg/clk_gate_prdata_reg     32.2506      0.0     15.2766     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_54
+u_sha256_core                     66089.9668     68.2      3.3948      0.0000  0.0000  sha256_core
+u_sha256_core/clk_gate_rd_ptr_reg    32.2506      0.0     15.2766     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sha256_loop_3
+u_sha256_core/u_k_lut              3152.0718      3.3   2337.3198    814.7520  0.0000  sha256_k_lut
+u_sha256_core/u_loop              44264.7974     45.6   8933.4162  13499.4224  0.0000  sha256_loop
+u_sha256_core/u_loop/DP_OP_71J1_122_6292  9958.6459    10.3  9958.6459     0.0000 0.0000 sha256_loop_DP_OP_71J1_122_6292_0
+u_sha256_core/u_loop/add_x_10      1476.7380      1.5   1476.7380      0.0000  0.0000  sha256_loop_DW01_add_1
+u_sha256_core/u_loop/add_x_11      1476.7380      1.5   1476.7380      0.0000  0.0000  sha256_loop_DW01_add_5
+u_sha256_core/u_loop/add_x_12      1476.7380      1.5   1476.7380      0.0000  0.0000  sha256_loop_DW01_add_7
+u_sha256_core/u_loop/add_x_5       1475.0406      1.5   1475.0406      0.0000  0.0000  sha256_loop_DW01_add_3
+u_sha256_core/u_loop/add_x_6       1476.7380      1.5   1476.7380      0.0000  0.0000  sha256_loop_DW01_add_0
+u_sha256_core/u_loop/add_x_7       1476.7380      1.5   1476.7380      0.0000  0.0000  sha256_loop_DW01_add_6
+u_sha256_core/u_loop/add_x_8       1476.7380      1.5   1476.7380      0.0000  0.0000  sha256_loop_DW01_add_2
+u_sha256_core/u_loop/add_x_9       1473.3432      1.5   1473.3432      0.0000  0.0000  sha256_loop_DW01_add_4
+u_sha256_core/u_loop/clk_gate_a_reg    32.2506     0.0    15.2766     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sha256_loop_0
+u_sha256_core/u_loop/clk_gate_h6_reg_0    32.2506     0.0    15.2766    16.9740 0.0000 SNPS_CLOCK_GATE_HIGH_sha256_loop_1
+u_sha256_core/u_w_reg             18637.4522     19.2   1828.0998  13039.4270  0.0000  sha256_w_reg
+u_sha256_core/u_w_reg/DP_OP_7J3_122_6642  3769.9255     3.9  3769.9255     0.0000 0.0000 sha256_w_reg_DP_OP_7J3_122_6642_0
+u_sha256_flow_ctl                   622.9458      0.6    398.8890    191.8062  0.0000  sha256_flow_ctl
+u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0    32.2506     0.0    15.2766    16.9740 0.0000 SNPS_CLOCK_GATE_HIGH_sha256_flow_ctl_0
+u_sync_fifo                       18498.2653     19.1   4442.0957  13475.6588  0.0000  sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4
+u_sync_fifo/clk_gate_mem_reg_0_      30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_18
+u_sync_fifo/clk_gate_mem_reg_10_     30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_11
+u_sync_fifo/clk_gate_mem_reg_11_     30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_12
+u_sync_fifo/clk_gate_mem_reg_12_     30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_13
+u_sync_fifo/clk_gate_mem_reg_13_     30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_14
+u_sync_fifo/clk_gate_mem_reg_14_     30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_15
+u_sync_fifo/clk_gate_mem_reg_15_     30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_16
+u_sync_fifo/clk_gate_mem_reg_1_      30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_47
+u_sync_fifo/clk_gate_mem_reg_2_      30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_19
+u_sync_fifo/clk_gate_mem_reg_3_      30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_48
+u_sync_fifo/clk_gate_mem_reg_4_      30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_44
+u_sync_fifo/clk_gate_mem_reg_5_      30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_49
+u_sync_fifo/clk_gate_mem_reg_6_      30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_45
+u_sync_fifo/clk_gate_mem_reg_7_      30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_46
+u_sync_fifo/clk_gate_mem_reg_8_      30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_9
+u_sync_fifo/clk_gate_mem_reg_9_      30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_10
+u_sync_fifo/clk_gate_ml_0            30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_8
+u_sync_fifo/clk_gate_ml_3            30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_17
+u_sync_fifo/clk_gate_wr_ptr_reg_3    30.5532      0.0     13.5792     16.9740  0.0000  SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_7
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------------------------------------------
+Total                                                  49575.9616  47398.1982  0.0000
+
+1

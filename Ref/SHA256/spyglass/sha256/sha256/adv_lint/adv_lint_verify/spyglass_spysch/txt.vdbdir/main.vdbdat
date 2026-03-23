@@ -1,0 +1,41 @@
+#x TXT_BEGIN T.1
+#x TXT_BEGIN T.2
+
+
+        FileName: ../rtl/sha256_axir.v, Line num: 136
+
+        FSM: sha256.u_sha256_axir.sta
+        Number of states: 4
+        Number of transitions: 7
+        Number of outputs from fsm: 4
+        Number of inputs to fsm: 5
+        Fsm encoding style: MINIMUMENCODED
+        Fsm style: MOORE
+        Next State logic figures: Simple Assignments
+        Depth of FSM: 3 (s_idle to s_cmd1)
+        Initial State of FSM: s_idle (from User Rtl & Av_initstate01)
+        Cyclomatic Complexity of FSM: 4
+#x TXT_END T.2
+#x TXT_BEGIN T.3
+#x TXT_END T.3
+#x TXT_BEGIN T.4
+#x TXT_BEGIN T.5
+
+
+        FileName: ../rtl/sha256_flow_ctl.v, Line num: 78
+
+        FSM: sha256.u_sha256_flow_ctl.sta
+        Number of states: 2
+        Number of transitions: 2
+        Number of outputs from fsm: 0
+        Number of inputs to fsm: 6
+        Fsm encoding style: MINIMUMENCODED
+        Fsm style: UNKNOWN
+        Next State logic figures: Simple Assignments
+        Depth of FSM: 1 (s_msg to s_cal)
+        Initial State of FSM: s_msg (from User Rtl & Av_initstate01)
+        Cyclomatic Complexity of FSM: 1
+#x TXT_END T.5
+#x TXT_BEGIN T.6
+#x TXT_END T.6
+#x TXT_BEGIN T.7

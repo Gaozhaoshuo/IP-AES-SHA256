@@ -1,0 +1,3317 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 100
+Design : sha256
+Version: O-2018.06-SP1
+Date   : Fri Sep 15 10:31:35 2023
+****************************************
+
+ # A fanout number of 250 was used for high fanout net computations.
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_sync_fifo/clk_gate_wr_ptr_reg_3/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_wr_ptr_reg_3/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_wr_ptr_reg_3/latch/GN (TLATNX1)     0.00      3.00 f
+  u_sync_fifo/clk_gate_wr_ptr_reg_3/latch/Q (TLATNX1)     0.12       3.12 r
+  u_sync_fifo/clk_gate_wr_ptr_reg_3/main_gate/A (AND2X1)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_wr_ptr_reg_3/main_gate/B (AND2X1)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/main_gate/A (AND2X1)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/main_gate/B (AND2X1)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_axir/clk_gate_cmd1_len_reg_0/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_axir/clk_gate_cmd1_len_reg_0/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_axir/clk_gate_cmd1_len_reg_0/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_axir/clk_gate_cmd1_len_reg_0/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_axir/clk_gate_cmd1_len_reg_0/main_gate/A (AND2X1)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_axir/clk_gate_cmd1_len_reg_0/main_gate/B (AND2X1)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_cfg/clk_gate_ml/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_cfg/clk_gate_ml/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_cfg/clk_gate_ml/latch/GN (TLATNX1)             0.00       3.00 f
+  u_sha256_cfg/clk_gate_ml/latch/Q (TLATNX1)              0.12       3.12 r
+  u_sha256_cfg/clk_gate_ml/main_gate/A (AND2X1)           0.00       3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_cfg/clk_gate_ml/main_gate/B (AND2X1)           0.00       3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_cfg/clk_gate_ml_0/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_cfg/clk_gate_ml_0/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_cfg/clk_gate_ml_0/latch/GN (TLATNX1)           0.00       3.00 f
+  u_sha256_cfg/clk_gate_ml_0/latch/Q (TLATNX1)            0.12       3.12 r
+  u_sha256_cfg/clk_gate_ml_0/main_gate/A (AND2X1)         0.00       3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_cfg/clk_gate_ml_0/main_gate/B (AND2X1)         0.00       3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_ml_0/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_ml_0/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_ml_0/latch/GN (TLATNX1)            0.00       3.00 f
+  u_sync_fifo/clk_gate_ml_0/latch/Q (TLATNX1)             0.12       3.12 r
+  u_sync_fifo/clk_gate_ml_0/main_gate/A (AND2X2)          0.00       3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_ml_0/main_gate/B (AND2X2)          0.00       3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_8_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_8_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_8_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_8_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_8_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_8_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_9_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_9_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_9_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_9_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_9_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_9_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_10_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_10_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_10_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_10_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_10_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_10_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_11_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_11_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_11_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_11_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_11_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_11_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_12_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_12_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_12_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_12_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_12_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_12_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_13_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_13_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_13_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_13_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_13_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_13_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_14_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_14_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_14_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_14_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_14_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_14_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_15_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_15_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_15_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_15_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_15_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_15_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_ml_3/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_ml_3/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_ml_3/latch/GN (TLATNX1)            0.00       3.00 f
+  u_sync_fifo/clk_gate_ml_3/latch/Q (TLATNX1)             0.12       3.12 r
+  u_sync_fifo/clk_gate_ml_3/main_gate/A (AND2X2)          0.00       3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_ml_3/main_gate/B (AND2X2)          0.00       3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_0_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_0_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_0_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_0_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_0_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_0_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_2_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_2_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_2_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_2_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_2_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_2_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_4_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_4_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_4_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_4_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_4_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_4_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_6_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_6_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_6_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_6_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_6_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_6_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_7_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_7_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_7_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_7_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_7_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_7_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_1_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_1_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_1_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_1_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_1_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_1_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_3_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_3_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_3_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_3_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_3_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_3_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_5_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_5_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_5_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_5_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_5_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_5_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_axir/clk_gate_axi_addr_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_axir/clk_gate_axi_addr_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_axir/clk_gate_axi_addr_reg/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_axir/clk_gate_axi_addr_reg/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_axir/clk_gate_axi_addr_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_axir/clk_gate_axi_addr_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_core/clk_gate_rd_ptr_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_core/clk_gate_rd_ptr_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_core/clk_gate_rd_ptr_reg/latch/GN (TLATNX1)     0.00      3.00 f
+  u_sha256_core/clk_gate_rd_ptr_reg/latch/Q (TLATNX1)     0.12       3.12 r
+  u_sha256_core/clk_gate_rd_ptr_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_core/clk_gate_rd_ptr_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_core/u_loop/clk_gate_h6_reg_0/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_core/u_loop/clk_gate_h6_reg_0/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_core/u_loop/clk_gate_h6_reg_0/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_core/u_loop/clk_gate_h6_reg_0/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_core/u_loop/clk_gate_h6_reg_0/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_core/u_loop/clk_gate_h6_reg_0/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_core/u_loop/clk_gate_a_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_core/u_loop/clk_gate_a_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_core/u_loop/clk_gate_a_reg/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_core/u_loop/clk_gate_a_reg/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_core/u_loop/clk_gate_a_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_core/u_loop/clk_gate_a_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_cfg/clk_gate_cfg_blk_len_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_cfg/clk_gate_cfg_blk_len_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_cfg/clk_gate_cfg_blk_len_reg/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_cfg/clk_gate_cfg_blk_len_reg/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_cfg/clk_gate_cfg_blk_len_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_cfg/clk_gate_cfg_blk_len_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_cfg/clk_gate_cfg_blk_base_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_cfg/clk_gate_cfg_blk_base_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_cfg/clk_gate_cfg_blk_base_reg/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_cfg/clk_gate_cfg_blk_base_reg/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_cfg/clk_gate_cfg_blk_base_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_cfg/clk_gate_cfg_blk_base_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_cfg/clk_gate_prdata_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_cfg/clk_gate_prdata_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_cfg/clk_gate_prdata_reg/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sha256_cfg/clk_gate_prdata_reg/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sha256_cfg/clk_gate_prdata_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_cfg/clk_gate_prdata_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_12_31_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_11_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_12_31_/CK (DFFX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_12_31_/Q (DFFX1)        0.11       1.11 f
+  u_sha256_core/u_w_reg/w_mem_reg_11_31_/D (DFFQX1)       0.00       1.11 f
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_11_31_/CK (DFFQX1)      0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_10_30_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_9_30_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_10_30_/CK (DFFX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_10_30_/Q (DFFX1)        0.11       1.11 f
+  u_sha256_core/u_w_reg/w_mem_reg_9_30_/D (DFFQX1)        0.00       1.11 f
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_9_30_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_31_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_31_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_31_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_31_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_31_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_31_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_31_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_31_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_31_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_31_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_30_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_30_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_30_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_30_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_30_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_30_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_30_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_30_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_30_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_30_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_30_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_30_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_29_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_29_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_29_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_29_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_29_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_29_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_29_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_29_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_29_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_29_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_29_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_29_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_28_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_28_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_28_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_28_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_28_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_28_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_28_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_28_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_28_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_28_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_28_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_28_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_27_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_27_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_27_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_27_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_27_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_27_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_27_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_27_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_27_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_27_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_27_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_27_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_26_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_26_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_26_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_26_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_26_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_26_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_26_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_26_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_26_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_26_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_26_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_26_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_25_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_25_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_25_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_25_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_25_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_25_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_25_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_25_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_25_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_25_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_24_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_24_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_24_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_24_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_24_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_24_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_24_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_24_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_24_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_24_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_24_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_24_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_23_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_23_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_23_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_23_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_23_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_23_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_23_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_23_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_23_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_23_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_23_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_23_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_22_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_22_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_22_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_22_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_22_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_22_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_22_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_22_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_22_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_22_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_22_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_22_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_21_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_21_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_21_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_21_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_21_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_21_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_21_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_21_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_21_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_21_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_21_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_21_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_20_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_20_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_20_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_20_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_20_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_20_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_20_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_20_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_20_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_20_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_20_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_20_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_19_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_19_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_19_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_19_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_19_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_19_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_19_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_19_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_19_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_19_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_19_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_19_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_18_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_18_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_18_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_18_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_18_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_18_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_18_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_18_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_18_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_18_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_18_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_18_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_17_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_17_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_17_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_17_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_17_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_17_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_17_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_17_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_17_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_17_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_16_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_16_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_16_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_16_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_16_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_16_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_16_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_16_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_16_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_16_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_16_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_16_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_15_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_15_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_15_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_15_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_15_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_15_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_15_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_15_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_15_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_15_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_15_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_15_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_14_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_14_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_14_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_14_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_14_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_14_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_14_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_14_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_14_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_14_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_13_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_13_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_13_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_13_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_13_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_13_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_13_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_13_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_13_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_13_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_13_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_13_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_12_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_12_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_12_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_12_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_12_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_12_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_12_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_12_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_12_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_12_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_12_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_12_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_11_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_11_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_11_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_11_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_11_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_11_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_11_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_11_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_11_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_11_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_11_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_10_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_10_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_10_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_10_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_10_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_10_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_10_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_10_/CK (DFFQX1)       0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_10_/Q (DFFQX1)        0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_10_/D (DFFQX1)        0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_10_/CK (DFFQX1)       0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_9_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_9_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_9_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_9_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_9_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_9_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_9_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_9_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_9_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_9_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_8_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_8_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_8_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_8_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_8_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_8_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_8_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_8_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_8_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_8_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_8_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_8_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_7_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_7_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_7_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_7_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_7_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_7_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_7_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_7_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_7_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_7_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_6_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_6_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_6_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_6_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_6_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_6_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_6_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_6_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_6_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_6_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_6_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_5_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_5_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_5_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_5_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_5_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_5_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_5_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_5_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_4_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_4_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_4_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_4_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_4_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_4_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_4_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_4_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_4_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_3_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_4_3_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_4_3_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_3_3_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_3_3_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_3_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_3_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_3_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_3_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_3_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_3_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_3_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_3_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_4_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_3_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_4_2_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_4_2_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_3_2_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_3_2_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_2_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_2_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_2_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_2_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_2_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_2_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_2_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_2_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_4_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_3_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_4_1_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_4_1_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_3_1_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_3_1_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_1_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_1_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_1_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_1_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_1_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_1_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_1_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_1_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_4_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_3_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_4_0_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_4_0_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_3_0_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_3_0_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_3_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_2_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_3_0_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_3_0_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_2_0_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_2_0_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: u_sha256_core/u_w_reg/w_mem_reg_2_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sha256_core/u_w_reg/w_mem_reg_1_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  u_sha256_core/u_w_reg/w_mem_reg_2_0_/CK (DFFQX1)        0.00 #     1.00 r
+  u_sha256_core/u_w_reg/w_mem_reg_2_0_/Q (DFFQX1)         0.12       1.12 f
+  u_sha256_core/u_w_reg/w_mem_reg_1_0_/D (DFFQX1)         0.00       1.12 f
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  clock uncertainty                                       0.08       1.08
+  u_sha256_core/u_w_reg/w_mem_reg_1_0_/CK (DFFQX1)        0.00       1.08 r
+  library hold time                                      -0.03       1.05
+  data required time                                                 1.05
+  --------------------------------------------------------------------------
+  data required time                                                 1.05
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+1

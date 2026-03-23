@@ -1,0 +1,141 @@
+#x STXT_BEGIN ST.1
+#x STXT_BEGIN ST.2
+#DOT_FSM_START;
+sg_fsm_legend -name {Intial State} -shape doublecircle
+sg_fsm_legend -name {Deadlocked State} -shape circle -style filled -color black
+sg_fsm_legend -name {Unreachable State} -shape circle -color red -style filled
+sg_fsm_legend -name {Livelock State} -shape circle -color blue -style filled
+sg_fsm_legend -name {Dead Transition (Analyzed)} -shape line -color red
+sg_fsm_legend -name {Dead Transition (Derived)} -shape line -color red -style dashed
+sg_fsm_legend -name {Livelock Transition} -shape line -color blue
+
+digraph _sta {
+ size="8,5"
+ orientation=land;
+help = "<h1>sha256.u_sha256_axir.sta</h1><h3><b><i>No of States: 4<br><b><i>No of Transitions: 7</i></b></h3>";
+s_idle[sgval="../rtl/sha256_axir.v@@137@@s_idle",shape=doublecircle,tooltip="Auto-Detected State"];
+s_judge[sgval="../rtl/sha256_axir.v@@142@@s_judge",shape=circle,tooltip="Auto-Detected State"];
+s_cmd0[sgval="../rtl/sha256_axir.v@@148@@s_cmd0",shape=circle,tooltip="Auto-Detected State"];
+s_cmd1[sgval="../rtl/sha256_axir.v@@159@@s_cmd1",shape=circle,tooltip="Auto-Detected State"];
+s_cmd0 -> s_idle [ label="(nxt_blk_len[32]&&axi_cmd_ack)",sgval="../rtl/sha256_axir.v@@151@@s_idle",tooltip="Auto-Detected Transition"];
+s_cmd1 -> s_idle [ label="(nxt_blk_len[32]&&axi_cmd_ack)",sgval="../rtl/sha256_axir.v@@162@@s_idle",tooltip="Auto-Detected Transition"];
+s_idle -> s_judge [ label="cfg_blk_sof",sgval="../rtl/sha256_axir.v@@139@@s_judge",tooltip="Auto-Detected Transition"];
+s_cmd0 -> s_judge [ label="((!cross_4kb)&&((!nxt_blk_len[32])&&axi_cmd_ack))",sgval="../rtl/sha256_axir.v@@155@@s_judge",tooltip="Auto-Detected Transition"];
+s_cmd1 -> s_judge [ label="((!nxt_blk_len[32])&&axi_cmd_ack)",sgval="../rtl/sha256_axir.v@@164@@s_judge",tooltip="Auto-Detected Transition"];
+s_judge -> s_cmd0 [ label="(!blk_osd_cmd[1])",sgval="../rtl/sha256_axir.v@@144@@s_cmd0",tooltip="Auto-Detected Transition"];
+s_cmd0 -> s_cmd1 [ label="(cross_4kb&&((!nxt_blk_len[32])&&axi_cmd_ack))",sgval="../rtl/sha256_axir.v@@153@@s_cmd1",tooltip="Auto-Detected Transition"];
+}
+#DOT_FSM_END;
+#x STXT_END ST.2
+#x STXT_BEGIN ST.3
+#x STXT_END ST.1
+#x STXT_BEGIN ST.4
+#x STXT_BEGIN ST.5
+#x STXT_BEGIN ST.6
+#DOT_FSM_START;
+sg_fsm_legend -name {Intial State} -shape doublecircle
+sg_fsm_legend -name {Deadlocked State} -shape circle -style filled -color black
+sg_fsm_legend -name {Unreachable State} -shape circle -color red -style filled
+sg_fsm_legend -name {Livelock State} -shape circle -color blue -style filled
+sg_fsm_legend -name {Dead Transition (Analyzed)} -shape line -color red
+sg_fsm_legend -name {Dead Transition (Derived)} -shape line -color red -style dashed
+sg_fsm_legend -name {Livelock Transition} -shape line -color blue
+
+digraph _sta {
+ size="8,5"
+ orientation=land;
+help = "<h1>sha256.u_sha256_flow_ctl.sta</h1><h3><b><i>No of States: 2<br><b><i>No of Transitions: 2</i></b></h3>";
+s_msg[sgval="../rtl/sha256_flow_ctl.v@@79@@s_msg",shape=doublecircle,tooltip="Auto-Detected State"];
+s_cal[sgval="../rtl/sha256_flow_ctl.v@@84@@s_cal",shape=circle,tooltip="Auto-Detected State"];
+s_cal -> s_msg [ label="sha_blk_end",sgval="../rtl/sha256_flow_ctl.v@@86@@s_msg",tooltip="Auto-Detected Transition"];
+s_msg -> s_cal [ label="(msg_vld&&(msg_dcnt=='d15))",sgval="../rtl/sha256_flow_ctl.v@@81@@s_cal",tooltip="Auto-Detected Transition"];
+}
+#DOT_FSM_END;
+#x STXT_END ST.6
+#x STXT_BEGIN ST.7
+#x STXT_END ST.5
+#x STXT_BEGIN ST.8
+#x STXT_BEGIN ST.9
+#x STXT_BEGIN ST.10
+#DOT_FSM_START;
+sg_fsm_legend -name {Intial State} -shape doublecircle
+sg_fsm_legend -name {Deadlocked State} -shape circle -style filled -color black
+sg_fsm_legend -name {Unreachable State} -shape circle -color red -style filled
+sg_fsm_legend -name {Livelock State} -shape circle -color blue -style filled
+sg_fsm_legend -name {Dead Transition (Analyzed)} -shape line -color red
+sg_fsm_legend -name {Dead Transition (Derived)} -shape line -color red -style dashed
+sg_fsm_legend -name {Livelock Transition} -shape line -color blue
+
+digraph _sta {
+ size="8,5"
+ orientation=land;
+help = "<h1>sha256.u_sha256_axir.sta</h1><h3><b><i>No of States: 4<br><b><i>No of Transitions: 7</i></b></h3>";
+s_idle[sgval="../rtl/sha256_axir.v@@137@@s_idle",shape=doublecircle,tooltip="Auto-Detected State"];
+s_judge[sgval="../rtl/sha256_axir.v@@142@@s_judge",shape=circle,tooltip="Auto-Detected State"];
+s_cmd0[sgval="../rtl/sha256_axir.v@@148@@s_cmd0",shape=circle,tooltip="Auto-Detected State"];
+s_cmd1[sgval="../rtl/sha256_axir.v@@159@@s_cmd1",shape=circle,tooltip="Auto-Detected State"];
+s_cmd0 -> s_idle [ label="(nxt_blk_len[32]&&axi_cmd_ack)",sgval="../rtl/sha256_axir.v@@151@@s_idle",tooltip="Auto-Detected Transition"];
+s_cmd1 -> s_idle [ label="(nxt_blk_len[32]&&axi_cmd_ack)",sgval="../rtl/sha256_axir.v@@162@@s_idle",tooltip="Auto-Detected Transition"];
+s_idle -> s_judge [ label="cfg_blk_sof",sgval="../rtl/sha256_axir.v@@139@@s_judge",tooltip="Auto-Detected Transition"];
+s_cmd0 -> s_judge [ label="((!cross_4kb)&&((!nxt_blk_len[32])&&axi_cmd_ack))",sgval="../rtl/sha256_axir.v@@155@@s_judge",tooltip="Auto-Detected Transition"];
+s_cmd1 -> s_judge [ label="((!nxt_blk_len[32])&&axi_cmd_ack)",sgval="../rtl/sha256_axir.v@@164@@s_judge",tooltip="Auto-Detected Transition"];
+s_judge -> s_cmd0 [ label="(!blk_osd_cmd[1])",sgval="../rtl/sha256_axir.v@@144@@s_cmd0",tooltip="Auto-Detected Transition"];
+s_cmd0 -> s_cmd1 [ label="(cross_4kb&&((!nxt_blk_len[32])&&axi_cmd_ack))",sgval="../rtl/sha256_axir.v@@153@@s_cmd1",tooltip="Auto-Detected Transition"];
+}
+#DOT_FSM_END;
+#x STXT_END ST.10
+#x STXT_BEGIN ST.11
+#x STXT_END ST.9
+#x STXT_BEGIN ST.12
+#x STXT_BEGIN ST.13
+#x STXT_BEGIN ST.14
+#DOT_FSM_START;
+sg_fsm_legend -name {Intial State} -shape doublecircle
+sg_fsm_legend -name {Deadlocked State} -shape circle -style filled -color black
+sg_fsm_legend -name {Unreachable State} -shape circle -color red -style filled
+sg_fsm_legend -name {Livelock State} -shape circle -color blue -style filled
+sg_fsm_legend -name {Dead Transition (Analyzed)} -shape line -color red
+sg_fsm_legend -name {Dead Transition (Derived)} -shape line -color red -style dashed
+sg_fsm_legend -name {Livelock Transition} -shape line -color blue
+
+digraph _sta {
+ size="8,5"
+ orientation=land;
+help = "<h1>sha256.u_sha256_flow_ctl.sta</h1><h3><b><i>No of States: 2<br><b><i>No of Transitions: 2</i></b></h3>";
+s_msg[sgval="../rtl/sha256_flow_ctl.v@@79@@s_msg",shape=doublecircle,tooltip="Auto-Detected State"];
+s_cal[sgval="../rtl/sha256_flow_ctl.v@@84@@s_cal",shape=circle,tooltip="Auto-Detected State"];
+s_cal -> s_msg [ label="sha_blk_end",sgval="../rtl/sha256_flow_ctl.v@@86@@s_msg",tooltip="Auto-Detected Transition"];
+s_msg -> s_cal [ label="(msg_vld&&(msg_dcnt=='d15))",sgval="../rtl/sha256_flow_ctl.v@@81@@s_cal",tooltip="Auto-Detected Transition"];
+}
+#DOT_FSM_END;
+#x STXT_END ST.14
+#x STXT_BEGIN ST.15
+#x STXT_END ST.13
+#x STXT_BEGIN ST.16
+#x STXT_BEGIN ST.17
+UTILITY Complexity Browser
+VERSION 3.8.2
+ATTRIBUTES 0
+TABINFO 1,Complexity Report,enabled
+
+TAB 0
+TYPE PowerTree
+COLOR_SET 0x00c095,25,0xcccc00,50,0xff8000,75,0xff0000,100
+STRLEN_SEPARATOR @@
+COLUMNS Instance Hierarchy,TREE,Elaborated Name,TEXT,Cyclomatic Complexity,NUM,Cumulative Cyclomatic Complexity,NUM,Level,NUM,Cumulative Complexity Percentage,COLOR,Scale,SCALEVALUE
+SEARCHABLE_COLUMNS 0,1
+
+DATA
+6@@sha2566@@sha2561@@13@@1961@@13@@1003@@100
+20@@sha256.u_sha256_core11@@sha256_core1@@13@@1171@@22@@592@@59
+27@@sha256.u_sha256_core.u_loop11@@sha256_loop2@@162@@161@@31@@81@@8
+28@@sha256.u_sha256_core.u_w_reg12@@sha256_w_reg2@@342@@341@@32@@172@@17
+28@@sha256.u_sha256_core.u_k_lut12@@sha256_k_lut2@@662@@661@@32@@332@@33
+24@@sha256.u_sha256_flow_ctl15@@sha256_flow_ctl2@@132@@131@@21@@61@@6
+18@@sha256.u_sync_fifo9@@sync_fifo1@@71@@71@@21@@31@@3
+20@@sha256.u_sha256_axir11@@sha256_axir2@@272@@271@@22@@132@@13
+19@@sha256.u_sha256_cfg10@@sha256_cfg2@@312@@311@@22@@152@@15
+END_DATA
+END_TAB
+#x STXT_END ST.17
+#x STXT_BEGIN ST.18

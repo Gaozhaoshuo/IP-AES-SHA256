@@ -1,0 +1,10 @@
+INPUT@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/html_reports/data_files/@@sha256@@adv_lint-adv_lint_struct@@
+COPY@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/moresimple.rpt@@data_files/sha256_adv_lint-adv_lint_struct_moresimple.rpt@@
+COPY@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/no_msg_reporting_rules.rpt@@data_files/sha256_adv_lint-adv_lint_struct_no_msg_reporting_rules.rpt@@
+REGEN@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/ADV-LINT.rpt@@data_files/sha256_adv_lint-adv_lint_struct_ADV-LINT.rpt.html@@
+REGEN@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/auto_verify.rpt@@data_files/sha256_adv_lint-adv_lint_struct_auto_verify.rpt.html@@
+COPY@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/auto_verify.rpt@@data_files/sha256_adv_lint-adv_lint_struct_auto_verify.rpt@@
+COPY@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/auto_verify.rpt@@data_files/sha256_adv_lint-adv_lint_struct_auto_verify.rpt@@
+COPY@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/ADV-LINT.rpt@@data_files/sha256_adv_lint-adv_lint_struct_ADV-LINT.rpt@@
+PROCESS@@auto-verify@@SpyGlass
+COPY@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/adv_lint/adv_lint_struct/spyglass.log@@data_files/sha256_adv_lint-adv_lint_struct_spyglass.log@@

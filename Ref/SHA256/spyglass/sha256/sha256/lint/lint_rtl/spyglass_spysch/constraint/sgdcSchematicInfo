@@ -1,0 +1,12 @@
+##Header_Start
+##Spyglass_Version:SpyGlass_vL-2016.06
+##Header_End
+
+##File_ID::1
+
+##File_Name::./scr/design.sgdc@@Design_Unit::sha256
+##Pattern::clk@@Line_no::4@@Delim::%@@%sha256.clk%
+##Line_no::4@@port@@sha256.clk
+##Pattern::rstn@@Line_no::5@@Delim::%@@%sha256.rstn%
+##Line_no::5@@port@@sha256.rstn
+

@@ -1,0 +1,215 @@
+2 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH2"
+1
+3 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH2"
+2
+4 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH2"
+3
+5 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH2"
+4
+6 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH2"
+5
+7 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH2"
+6
+8 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH2"
+7
+9 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH2"
+8
+10 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH2"
+9
+11 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+1
+12 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+2
+13 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+3
+14 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+4
+15 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+5
+16 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+6
+17 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+7
+18 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+8
+19 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+9
+20 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+10
+21 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+11
+22 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+12
+23 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+13
+24 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+14
+25 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+15
+26 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+16
+27 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH01"
+17
+28 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+1
+29 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+2
+30 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+3
+31 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+4
+32 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+5
+33 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+6
+34 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+7
+35 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+8
+36 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+9
+37 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+10
+38 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+11
+39 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+12
+40 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+13
+41 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+14
+42 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+15
+43 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+16
+44 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+17
+45 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+18
+46 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+19
+47 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+20
+48 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+21
+49 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+22
+50 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+23
+51 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+24
+52 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+25
+53 "Av_initstate01" 1
+"AV_INITSTATE01_SS_SCH"
+26
+54 "Av_initstate01" 1
+"Open_Sp_Sheet"
+["./sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/auto-verify/Uninitialized_Sequential_Elements.csv@@cross-probecol:1","./sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/auto-verify/Initialized_Sequential_Elements.csv@@cross-probecol:1"]
+57 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH"
+1
+58 "Av_complexity01" 1
+"AV_COMPLEXITY01_SS_SCH"
+2
+59 "Av_complexity01" 1
+"Open_Sp_Sheet"
+["./sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/auto-verify/Av_complexity01_module.csv@@cross-probecol:1","./sha256/sha256/adv_lint/adv_lint_struct/spyglass_reports/auto-verify/Av_complexity01_fsm.csv@@cross-probecol:1"]
+-1 "Av_Info_Case_Analysis" 4
+"TEMPLATE"
+["adv_lint/adv_lint_struct"]
+"RULE_ORDER"
+[1]
+"RULEGROUP"
+["auto-verify/Info"]
+"SPG_RULETAG_SCH_INFO_RULE"
+"Show Info Case Analysis Data"
+-1 "Av_complexity01" 3
+"TEMPLATE"
+["adv_lint/adv_lint_struct"]
+"RULE_ORDER"
+[13]
+"RULEGROUP"
+["auto-verify/Info"]
+-1 "Av_fsminf01" 3
+"TEMPLATE"
+["adv_lint/adv_lint_struct"]
+"RULE_ORDER"
+[2]
+"RULEGROUP"
+["auto-verify/Info"]
+-1 "Av_initstate01" 3
+"TEMPLATE"
+["adv_lint/adv_lint_struct"]
+"RULE_ORDER"
+[-1]
+"RULEGROUP"
+["auto-verify/Info"]
+-1 "Av_report01" 3
+"TEMPLATE"
+["adv_lint/adv_lint_struct"]
+"RULE_ORDER"
+[-1]
+"RULEGROUP"
+["auto-verify/Info"]
+-1 "DetectTopDesignUnits" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"
+-1 "ElabSummary" 2
+"RULEGROUP"
+["Design Read"]
+"BUILTIN"
+"1"

@@ -1,0 +1,452 @@
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -L ./work -l load.log tb 
+# Start time: 10:55:18 on Sep 14,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "sha256_axir(fast)".
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.sha256(fast)
+# Loading work.sha256_cfg(fast)
+# Loading work.sha256_axir(fast)
+# Loading work.sync_fifo(fast)
+# Loading work.sha256_flow_ctl(fast)
+# Loading work.sha256_core(fast)
+# Loading work.sha256_k_lut(fast)
+# Loading work.sha256_w_reg(fast)
+# Loading work.sha256_loop(fast)
+# Loading work.sha256_trc(fast)
+# hexadecimal
+# Info: sim case info:
+# Total test bulk number: 00000014.
+# 
+add wave -position insertpoint  \
+sim:/tb/u_sha256/u_sha256_flow_ctl/clk \
+sim:/tb/u_sha256/u_sha256_flow_ctl/rstn \
+sim:/tb/u_sha256/u_sha256_flow_ctl/cfg_blk_sof \
+sim:/tb/u_sha256/u_sha256_flow_ctl/axi_bulk_end \
+sim:/tb/u_sha256/u_sha256_flow_ctl/ibuf_empty \
+sim:/tb/u_sha256/u_sha256_flow_ctl/ibuf_pop \
+sim:/tb/u_sha256/u_sha256_flow_ctl/ibuf_rdata \
+sim:/tb/u_sha256/u_sha256_flow_ctl/bulk_fir_ini \
+sim:/tb/u_sha256/u_sha256_flow_ctl/bulk_nxt_ini \
+sim:/tb/u_sha256/u_sha256_flow_ctl/msg_vld \
+sim:/tb/u_sha256/u_sha256_flow_ctl/msg_data \
+sim:/tb/u_sha256/u_sha256_flow_ctl/msg_dcnt \
+sim:/tb/u_sha256/u_sha256_flow_ctl/sha_blk_end \
+sim:/tb/u_sha256/u_sha256_flow_ctl/sta \
+sim:/tb/u_sha256/u_sha256_flow_ctl/fir_blk
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/new_proj/sha256/modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/new_proj/sha256/modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/new_proj/sha256/modelsim/wave.do
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 11:07:22 on Sep 14,2023
+# vlog -reportprogress 300 -O4 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module sha256_trc
+# -- Compiling module sha256
+# -- Compiling module sha256_cfg
+# -- Compiling module sha256_axir
+# -- Compiling module sha256_flow_ctl
+# -- Compiling module sha256_core
+# -- Compiling module sha256_k_lut
+# -- Compiling module sha256_w_reg
+# -- Compiling module sha256_loop
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	tb
+# End time: 11:07:22 on Sep 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:07:24 on Sep 14,2023, Elapsed time: 0:12:06
+# Errors: 0, Warnings: 0
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -L ./work -l load.log tb 
+# Start time: 11:07:24 on Sep 14,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.sha256(fast)
+# Loading work.sha256_cfg(fast)
+# Loading work.sha256_axir(fast)
+# Loading work.sync_fifo(fast)
+# Loading work.sha256_flow_ctl(fast)
+# Loading work.sha256_core(fast)
+# Loading work.sha256_k_lut(fast)
+# Loading work.sha256_w_reg(fast)
+# Loading work.sha256_loop(fast)
+# Loading work.sha256_trc(fast)
+# hexadecimal
+# Info: sim case info:
+# Total test bulk number: 00000014.
+# 
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/new_proj/sha256/modelsim/wave.do
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 11:12:01 on Sep 14,2023
+# vlog -reportprogress 300 -O4 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module sha256_trc
+# -- Compiling module sha256
+# -- Compiling module sha256_cfg
+# -- Compiling module sha256_axir
+# -- Compiling module sha256_flow_ctl
+# -- Compiling module sha256_core
+# -- Compiling module sha256_k_lut
+# -- Compiling module sha256_w_reg
+# -- Compiling module sha256_loop
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	tb
+# End time: 11:12:01 on Sep 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:12:03 on Sep 14,2023, Elapsed time: 0:04:39
+# Errors: 0, Warnings: 0
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -L ./work -l load.log tb 
+# Start time: 11:12:03 on Sep 14,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "sha256_axir(fast)".
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.sha256(fast)
+# Loading work.sha256_cfg(fast)
+# Loading work.sha256_axir(fast)
+# Loading work.sync_fifo(fast)
+# Loading work.sha256_flow_ctl(fast)
+# Loading work.sha256_core(fast)
+# Loading work.sha256_k_lut(fast)
+# Loading work.sha256_w_reg(fast)
+# Loading work.sha256_loop(fast)
+# Loading work.sha256_trc(fast)
+# hexadecimal
+# Info: sim case info:
+# Total test bulk number: 00000014.
+# 
+# Error: sim fail.
+# Fail at test bulk of 00000000, 32bit result location 0000 .
+# Ref is cdcdcdcd, DUT out is 494c58ba .
+# ** Note: $finish    : ../pattern/apb_ms_model.v(192)
+#    Time: 1326 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 192
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/new_proj/sha256/modelsim/wave.do
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 11:17:41 on Sep 14,2023
+# vlog -reportprogress 300 -O4 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module sha256_trc
+# -- Compiling module sha256
+# -- Compiling module sha256_cfg
+# -- Compiling module sha256_axir
+# -- Compiling module sha256_flow_ctl
+# -- Compiling module sha256_core
+# -- Compiling module sha256_k_lut
+# -- Compiling module sha256_w_reg
+# -- Compiling module sha256_loop
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	tb
+# End time: 11:17:41 on Sep 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:17:43 on Sep 14,2023, Elapsed time: 0:05:40
+# Errors: 0, Warnings: 0
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -L ./work -l load.log tb 
+# Start time: 11:17:43 on Sep 14,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "sha256_axir(fast)".
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.sha256(fast)
+# Loading work.sha256_cfg(fast)
+# Loading work.sha256_axir(fast)
+# Loading work.sync_fifo(fast)
+# Loading work.sha256_flow_ctl(fast)
+# Loading work.sha256_core(fast)
+# Loading work.sha256_k_lut(fast)
+# Loading work.sha256_w_reg(fast)
+# Loading work.sha256_loop(fast)
+# Loading work.sha256_trc(fast)
+# hexadecimal
+# Info: sim case info:
+# Total test bulk number: 00000014.
+# 
+# Error: sim fail.
+# Fail at test bulk of 00000000, 32bit result location 0000 .
+# Ref is cdcdcdcd, DUT out is cce46155 .
+# ** Note: $finish    : ../pattern/apb_ms_model.v(192)
+#    Time: 1326 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 192
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/new_proj/sha256/modelsim/wave.do
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 11:26:44 on Sep 14,2023
+# vlog -reportprogress 300 -O4 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module sha256_trc
+# -- Compiling module sha256
+# -- Compiling module sha256_cfg
+# -- Compiling module sha256_axir
+# -- Compiling module sha256_flow_ctl
+# -- Compiling module sha256_core
+# -- Compiling module sha256_k_lut
+# -- Compiling module sha256_w_reg
+# -- Compiling module sha256_loop
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	tb
+# End time: 11:26:44 on Sep 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:26:46 on Sep 14,2023, Elapsed time: 0:09:03
+# Errors: 0, Warnings: 0
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -L ./work -l load.log tb 
+# Start time: 11:26:46 on Sep 14,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.sha256(fast)
+# Loading work.sha256_cfg(fast)
+# Loading work.sha256_axir(fast)
+# Loading work.sync_fifo(fast)
+# Loading work.sha256_flow_ctl(fast)
+# Loading work.sha256_core(fast)
+# Loading work.sha256_k_lut(fast)
+# Loading work.sha256_w_reg(fast)
+# Loading work.sha256_loop(fast)
+# Loading work.sha256_trc(fast)
+# hexadecimal
+# Info: sim case info:
+# Total test bulk number: 00000014.
+# 
+# Error: sim fail.
+# Fail at test bulk of 00000002, 32bit result location 0000 .
+# Ref is 00000000, DUT out is d78af71b .
+# ** Note: $finish    : ../pattern/apb_ms_model.v(192)
+#    Time: 5536 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 192
+add wave -position insertpoint  \
+sim:/tb/u_apb_ms_model/bulk_cnt
+add wave -position insertpoint  \
+sim:/tb/u_apb_ms_model/in_byte_len \
+sim:/tb/u_apb_ms_model/in_data_base \
+sim:/tb/u_apb_ms_model/i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/new_proj/sha256/modelsim/wave.do
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 11:41:35 on Sep 14,2023
+# vlog -reportprogress 300 -O4 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module sha256_trc
+# -- Compiling module sha256
+# -- Compiling module sha256_cfg
+# -- Compiling module sha256_axir
+# -- Compiling module sha256_flow_ctl
+# -- Compiling module sha256_core
+# -- Compiling module sha256_k_lut
+# -- Compiling module sha256_w_reg
+# -- Compiling module sha256_loop
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	tb
+# End time: 11:41:35 on Sep 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:41:41 on Sep 14,2023, Elapsed time: 0:14:55
+# Errors: 0, Warnings: 0
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -L ./work -l load.log tb 
+# Start time: 11:41:41 on Sep 14,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.sha256(fast)
+# Loading work.sha256_cfg(fast)
+# Loading work.sha256_axir(fast)
+# Loading work.sync_fifo(fast)
+# Loading work.sha256_flow_ctl(fast)
+# Loading work.sha256_core(fast)
+# Loading work.sha256_k_lut(fast)
+# Loading work.sha256_w_reg(fast)
+# Loading work.sha256_loop(fast)
+# Loading work.sha256_trc(fast)
+# hexadecimal
+# Info: sim case info:
+# Total test bulk number: 00000014.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(199)
+#    Time: 149156 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 199
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/new_proj/sha256/modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/new_proj/sha256/modelsim/wave.do
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 11:49:35 on Sep 14,2023
+# vlog -reportprogress 300 -O4 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module sha256_trc
+# -- Compiling module sha256
+# -- Compiling module sha256_cfg
+# -- Compiling module sha256_axir
+# -- Compiling module sha256_flow_ctl
+# -- Compiling module sha256_core
+# -- Compiling module sha256_k_lut
+# -- Compiling module sha256_w_reg
+# -- Compiling module sha256_loop
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	tb
+# End time: 11:49:35 on Sep 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:49:37 on Sep 14,2023, Elapsed time: 0:07:56
+# Errors: 0, Warnings: 0
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -L ./work -l load.log tb 
+# Start time: 11:49:37 on Sep 14,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.sha256(fast)
+# Loading work.sha256_cfg(fast)
+# Loading work.sha256_axir(fast)
+# Loading work.sync_fifo(fast)
+# Loading work.sha256_flow_ctl(fast)
+# Loading work.sha256_core(fast)
+# Loading work.sha256_k_lut(fast)
+# Loading work.sha256_w_reg(fast)
+# Loading work.sha256_loop(fast)
+# Loading work.sha256_trc(fast)
+# hexadecimal
+# Info: sim case info:
+# Total test bulk number: 00000028.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(199)
+#    Time: 565266 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 199
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 11:50:33 on Sep 14,2023
+# vlog -reportprogress 300 -O4 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module sha256_trc
+# -- Compiling module sha256
+# -- Compiling module sha256_cfg
+# -- Compiling module sha256_axir
+# -- Compiling module sha256_flow_ctl
+# -- Compiling module sha256_core
+# -- Compiling module sha256_k_lut
+# -- Compiling module sha256_w_reg
+# -- Compiling module sha256_loop
+# -- Compiling module sync_fifo
+# 
+# Top level modules:
+# 	tb
+# End time: 11:50:33 on Sep 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:50:38 on Sep 14,2023, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 0
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -L ./work -l load.log tb 
+# Start time: 11:50:38 on Sep 14,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.sha256(fast)
+# Loading work.sha256_cfg(fast)
+# Loading work.sha256_axir(fast)
+# Loading work.sync_fifo(fast)
+# Loading work.sha256_flow_ctl(fast)
+# Loading work.sha256_core(fast)
+# Loading work.sha256_k_lut(fast)
+# Loading work.sha256_w_reg(fast)
+# Loading work.sha256_loop(fast)
+# Loading work.sha256_trc(fast)
+# hexadecimal
+# Info: sim case info:
+# Total test bulk number: 00000028.
+# 
+# Info: sim for package:          0.
+# Info: sim for package:          1.
+# Info: sim for package:          2.
+# Info: sim for package:          3.
+# Info: sim for package:          4.
+# Info: sim for package:          5.
+# Info: sim for package:          6.
+# Info: sim for package:          7.
+# Info: sim for package:          8.
+# Info: sim for package:          9.
+# Info: sim for package:         10.
+# Info: sim for package:         11.
+# Info: sim for package:         12.
+# Info: sim for package:         13.
+# Info: sim for package:         14.
+# Info: sim for package:         15.
+# Info: sim for package:         16.
+# Info: sim for package:         17.
+# Info: sim for package:         18.
+# Info: sim for package:         19.
+# Info: sim for package:         20.
+# Info: sim for package:         21.
+# Info: sim for package:         22.
+# Info: sim for package:         23.
+# Info: sim for package:         24.
+# Info: sim for package:         25.
+# Info: sim for package:         26.
+# Info: sim for package:         27.
+# Info: sim for package:         28.
+# Info: sim for package:         29.
+# Info: sim for package:         30.
+# Info: sim for package:         31.
+# Info: sim for package:         32.
+# Info: sim for package:         33.
+# Info: sim for package:         34.
+# Info: sim for package:         35.
+# Info: sim for package:         36.
+# Info: sim for package:         37.
+# Info: sim for package:         38.
+# Info: sim for package:         39.
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(201)
+#    Time: 565266 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 201
+quit -sim
+# End time: 11:51:09 on Sep 14,2023, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0

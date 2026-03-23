@@ -1,0 +1,17 @@
+################################################################################
+#
+# Purpose: 
+#   This file specifies the assertion details along with their run status.
+#   Functional analysis is done only for those assertions that are enabled
+#   in the property file.
+#
+# Format: 
+#   
+#   RuleName: <rule-name>
+#   <selection> <type> <status> <file-name> <line-num> <hier> [ <info> ]
+#   .....
+#   
+#   
+################################################################################
+RuleName: Av_width_mismatch_assign 
+off  Assertion   FAILED              ../rtl/sha256_axir.v  178  "sha256.u_sha256_axir"  [Width mismatch between expr (blk_len) and expr (nxt_blk_len)]

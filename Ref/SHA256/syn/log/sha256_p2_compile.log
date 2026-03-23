@@ -1,0 +1,145 @@
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Warning: The -area_high_effort_script option is ignored. To enable further area optimization, use the optimize_netlist -area command. (OPT-1341)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+
+Information: There are 104 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib-52/slow.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIELO' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHI' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Memory usage for J12 task 236 Mbytes -- main task 236 Mbytes.
+Memory usage for J13 task 236 Mbytes -- main task 236 Mbytes.
+Memory usage for J14 task 236 Mbytes -- main task 236 Mbytes.
+Memory usage for J15 task 236 Mbytes -- main task 236 Mbytes.
+Memory usage for J16 task 236 Mbytes -- main task 236 Mbytes.
+Memory usage for J17 task 236 Mbytes -- main task 236 Mbytes.
+Memory usage for J18 task 236 Mbytes -- main task 236 Mbytes.
+Information: Performing global clock-gating on design sha256. (PWR-731)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03   97110.0      6.91      41.3      15.7                           76295160.0000
+    0:00:03   97125.2      0.00       0.0       2.2                           76310016.0000
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+  Mapping 'sha256_axir_DP_OP_47J2_123_7638_0_0'
+  Mapping 'sha256_w_reg_DP_OP_7J3_122_6642_0_0'
+  Mapping 'sha256_loop_DW01_add_8'
+  Mapping 'sha256_loop_DW01_add_9'
+  Mapping 'sha256_loop_DW01_add_10'
+  Mapping 'sha256_loop_DW01_add_11'
+  Mapping 'sha256_loop_DW01_add_12'
+  Mapping 'sha256_loop_DW01_add_13'
+  Mapping 'sha256_loop_DW01_add_14'
+  Mapping 'sha256_loop_DW01_add_15'
+  Mapping 'sha256_loop_DP_OP_71J1_122_6292_0_0'
+    0:00:05   97169.4      0.00       0.0       0.5                           76270264.0000
+    0:00:05   97169.4      0.00       0.0       0.5                           76270264.0000
+    0:00:05   97169.4      0.00       0.0       0.5                           76270264.0000
+    0:00:05   97169.4      0.00       0.0       0.5                           76270264.0000
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+  Global Optimization (Phase 54)
+  Global Optimization (Phase 55)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:05   96987.7      0.00       0.0       0.0                           76145016.0000
+    0:00:05   96987.7      0.00       0.0       0.0                           76145016.0000
+    0:00:05   97016.6      0.00       0.0       0.0                           76009032.0000
+    0:00:05   97016.6      0.00       0.0       0.0                           76009032.0000
+    0:00:05   97016.6      0.00       0.0       0.0                           76009032.0000
+    0:00:05   97016.6      0.00       0.0       0.0                           76009032.0000
+    0:00:05   97016.6      0.00       0.0       0.0                           76009032.0000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:05   97016.6      0.00       0.0       0.0                           76009032.0000
+    0:00:05   97016.6      0.00       0.0       0.0                           76009032.0000
+    0:00:05   97016.6      0.00       0.0       0.0                           76009032.0000
+    0:00:05   97016.6      0.00       0.0       0.0                           76009032.0000
+    0:00:05   97016.6      0.00       0.0       0.0                           76009032.0000
+    0:00:05   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:05   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97020.0      0.00       0.0       0.0                           76009480.0000
+    0:00:06   97070.9      0.00       0.0       0.0                           76068096.0000
+    0:00:06   97070.9      0.00       0.0       0.0                           76068096.0000
+    0:00:06   97070.9      0.00       0.0       0.0                           76068096.0000
+    0:00:06   97070.9      0.00       0.0       0.0                           76068096.0000
+    0:00:06   97070.9      0.00       0.0       0.0                           76068096.0000
+    0:00:06   97070.9      0.00       0.0       0.0                           76068096.0000
+    0:00:06   97070.9      0.00       0.0       0.0                           76068096.0000
+    0:00:06   97070.9      0.00       0.0       0.0                           76068096.0000
+    0:00:06   97070.9      0.00       0.0       0.0                           76068096.0000
+    0:00:07   97111.6      0.00       0.0       0.0                           76138968.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07   98780.6      0.00       0.0       0.0                           76138968.0000
+    0:00:07   98795.9      0.00       0.0       0.0                           76155168.0000
+    0:00:07   98695.8      0.00       0.0       0.0                           75827280.0000
+    0:00:07   98695.8      0.00       0.0       0.0                           75827280.0000
+    0:00:08   98643.2      0.00       0.0       0.0                           75903216.0000
+Loading db file '/home/yyx/proj/libs/TSMC_013/synopsys/fast.db'
+Loading db file '/home/yyx/proj/libs/TSMC_013/synopsys/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'sha256' contains 3 high-fanout nets. A fanout number of 250 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'u_sync_fifo/IN0': 555 load(s), 1 driver(s)
+     Net 'u_sha256_core/u_loop/clk_gate_h6_reg_0/net342': 256 load(s), 1 driver(s)
+     Net 'u_sha256_core/u_loop/clk_gate_a_reg/net342': 256 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1

@@ -1,0 +1,105 @@
+ 
+****************************************
+Report : disable_timing
+Design : sha256
+Version: O-2018.06-SP1
+Date   : Fri Sep 15 10:31:25 2023
+****************************************
+
+
+
+Flags:       c  case-analysis
+             f  false net arc
+             C  Conditional arc
+             l  loop breaking
+             u  user-defined
+             m  modes
+
+
+  Cell or Port        From        To             Sense               Flag
+--------------------------------------------------------------------------------
+
+  u_sha256_axir/clk_gate_blk_len_reg/test_or
+                      B           Y              positive_unate      c 
+  u_sha256_axir/clk_gate_cmd1_len_reg/test_or
+                      B           Y              positive_unate      c 
+  u_sha256_cfg/clk_gate_cfg_blk_base_reg_1/test_or
+                      B           Y              positive_unate      c 
+  u_sha256_cfg/clk_gate_cfg_blk_len_reg_1/test_or
+                      B           Y              positive_unate      c 
+  u_sha256_cfg/clk_gate_ml_1/test_or
+                      B           Y              positive_unate      c 
+  u_sha256_cfg/clk_gate_ml_2/test_or
+                      B           Y              positive_unate      c 
+  u_sha256_cfg/clk_gate_prdata_reg_1/test_or
+                      B           Y              positive_unate      c 
+  u_sha256_core/clk_gate_w_mem_reg[15]/test_or
+                      B           Y              positive_unate      c 
+  u_sha256_core/u_loop/clk_gate_d_reg/test_or
+                      B           Y              positive_unate      c 
+  u_sha256_core/u_loop/clk_gate_h6_reg/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[0]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[1]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[2]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[3]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[4]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[5]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[6]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[7]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[8]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[9]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[10]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[11]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[12]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[13]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[14]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_mem_reg[15]_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_ml_1/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_ml_2/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_rd_ptr_reg_0/test_or
+                      B           Y              positive_unate      c 
+  u_sync_fifo/clk_gate_wr_ptr_reg_1/test_or
+                      B           Y              positive_unate      c 
+  araddr[0]                                                          c
+  araddr[1]                                                          c
+  arburst[0]                                                         c
+  arburst[1]                                                         c
+  arcache[0]                                                         c
+  arcache[1]                                                         c
+  arcache[2]                                                         c
+  arcache[3]                                                         c
+  arid[0]                                                            c
+  arid[1]                                                            c
+  arid[2]                                                            c
+  arid[3]                                                            c
+  arlock[0]                                                          c
+  arlock[1]                                                          c
+  arprot[0]                                                          c
+  arprot[1]                                                          c
+  arprot[2]                                                          c
+  arsize[0]                                                          c
+  arsize[1]                                                          c
+  arsize[2]                                                          c
+  pready                                                             c
+  rready                                                             c
+
+1

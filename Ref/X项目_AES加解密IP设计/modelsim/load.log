@@ -1,0 +1,581 @@
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -noglitch -L ./work -l load.log tb 
+# Start time: 08:38:02 on Sep 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# 
+# Use vdir -l command to find such design units.
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.aes_top(fast)
+# Loading work.aes_cfg(fast)
+# Loading work.aes_axir(fast)
+# Loading work.aes_flow_ctrl(fast)
+# Loading work.aes_core(fast)
+# Loading work.aes_encipher_block(fast)
+# Loading work.aes_decipher_block_fast(fast)
+# Loading work.aes_inv_sbox_fast(fast)
+# Loading work.aes_key_mem(fast)
+# Loading work.aes_sbox_lut(fast)
+# Loading work.reg_file_wbe(fast)
+# Loading work.aes_axiw(fast)
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(215): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(232): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(245): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# hexadecimal
+# Info: sim case info:
+# Encrypt case.
+# 128 bit key length
+# ECB mode in a bulk data
+# Total test bulk number: 0000000a.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(250)
+#    Time: 23396 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 250
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 09:18:44 on Sep 04,2024
+# vlog -reportprogress 300 -O0 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module aes_top
+# -- Compiling module aes_cfg
+# -- Compiling module aes_flow_ctrl
+# -- Compiling module aes_axir
+# -- Compiling module aes_axiw
+# -- Compiling module aes_core
+# -- Compiling module aes_sbox_lut
+# -- Compiling module aes_key_mem
+# -- Compiling module aes_encipher_block
+# -- Compiling module aes_decipher_block_fast
+# -- Compiling module aes_inv_sbox_fast
+# -- Compiling module reg_file_wbe
+# 
+# Top level modules:
+# 	tb
+# End time: 09:18:44 on Sep 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:18:46 on Sep 04,2024, Elapsed time: 0:40:44
+# Errors: 0, Warnings: 4
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -noglitch -L ./work -l load.log tb 
+# Start time: 09:18:46 on Sep 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# 
+# Use vdir -l command to find such design units.
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "aes_decipher_block_fast(fast)".
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.aes_top(fast)
+# Loading work.aes_cfg(fast)
+# Loading work.aes_axir(fast)
+# Loading work.aes_flow_ctrl(fast)
+# Loading work.aes_core(fast)
+# Loading work.aes_encipher_block(fast)
+# Loading work.aes_decipher_block_fast(fast)
+# Loading work.aes_inv_sbox_fast(fast)
+# Loading work.aes_key_mem(fast)
+# Loading work.aes_sbox_lut(fast)
+# Loading work.reg_file_wbe(fast)
+# Loading work.aes_axiw(fast)
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(215): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(232): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(245): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# hexadecimal
+# Info: sim case info:
+# Encrypt case.
+# 128 bit key length
+# ECB mode in a bulk data
+# Total test bulk number: 0000000a.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(250)
+#    Time: 23396 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 250
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 09:19:02 on Sep 04,2024
+# vlog -reportprogress 300 -O0 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module aes_top
+# -- Compiling module aes_cfg
+# -- Compiling module aes_flow_ctrl
+# -- Compiling module aes_axir
+# -- Compiling module aes_axiw
+# -- Compiling module aes_core
+# -- Compiling module aes_sbox_lut
+# -- Compiling module aes_key_mem
+# -- Compiling module aes_encipher_block
+# -- Compiling module aes_decipher_block_fast
+# -- Compiling module aes_inv_sbox_fast
+# -- Compiling module reg_file_wbe
+# 
+# Top level modules:
+# 	tb
+# End time: 09:19:02 on Sep 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:19:05 on Sep 04,2024, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 4
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -noglitch -L ./work -l load.log tb 
+# Start time: 09:19:05 on Sep 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# 
+# Use vdir -l command to find such design units.
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.aes_top(fast)
+# Loading work.aes_cfg(fast)
+# Loading work.aes_axir(fast)
+# Loading work.aes_flow_ctrl(fast)
+# Loading work.aes_core(fast)
+# Loading work.aes_encipher_block(fast)
+# Loading work.aes_decipher_block_fast(fast)
+# Loading work.aes_inv_sbox_fast(fast)
+# Loading work.aes_key_mem(fast)
+# Loading work.aes_sbox_lut(fast)
+# Loading work.reg_file_wbe(fast)
+# Loading work.aes_axiw(fast)
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(215): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(232): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(245): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# hexadecimal
+# Info: sim case info:
+# Encrypt case.
+# 256 bit key length
+# ECB mode in a bulk data
+# Total test bulk number: 0000000a.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(250)
+#    Time: 27746 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 250
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 09:19:27 on Sep 04,2024
+# vlog -reportprogress 300 -O0 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module aes_top
+# -- Compiling module aes_cfg
+# -- Compiling module aes_flow_ctrl
+# -- Compiling module aes_axir
+# -- Compiling module aes_axiw
+# -- Compiling module aes_core
+# -- Compiling module aes_sbox_lut
+# -- Compiling module aes_key_mem
+# -- Compiling module aes_encipher_block
+# -- Compiling module aes_decipher_block_fast
+# -- Compiling module aes_inv_sbox_fast
+# -- Compiling module reg_file_wbe
+# 
+# Top level modules:
+# 	tb
+# End time: 09:19:27 on Sep 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:19:29 on Sep 04,2024, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 4
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -noglitch -L ./work -l load.log tb 
+# Start time: 09:19:29 on Sep 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# 
+# Use vdir -l command to find such design units.
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.aes_top(fast)
+# Loading work.aes_cfg(fast)
+# Loading work.aes_axir(fast)
+# Loading work.aes_flow_ctrl(fast)
+# Loading work.aes_core(fast)
+# Loading work.aes_encipher_block(fast)
+# Loading work.aes_decipher_block_fast(fast)
+# Loading work.aes_inv_sbox_fast(fast)
+# Loading work.aes_key_mem(fast)
+# Loading work.aes_sbox_lut(fast)
+# Loading work.reg_file_wbe(fast)
+# Loading work.aes_axiw(fast)
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(215): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(232): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(245): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# hexadecimal
+# Info: sim case info:
+# Encrypt case.
+# 128 bit key length
+# CBC mode in a bulk data
+# Total test bulk number: 0000000a.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(250)
+#    Time: 23586 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 250
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 09:19:50 on Sep 04,2024
+# vlog -reportprogress 300 -O0 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module aes_top
+# -- Compiling module aes_cfg
+# -- Compiling module aes_flow_ctrl
+# -- Compiling module aes_axir
+# -- Compiling module aes_axiw
+# -- Compiling module aes_core
+# -- Compiling module aes_sbox_lut
+# -- Compiling module aes_key_mem
+# -- Compiling module aes_encipher_block
+# -- Compiling module aes_decipher_block_fast
+# -- Compiling module aes_inv_sbox_fast
+# -- Compiling module reg_file_wbe
+# 
+# Top level modules:
+# 	tb
+# End time: 09:19:50 on Sep 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:19:52 on Sep 04,2024, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 4
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -noglitch -L ./work -l load.log tb 
+# Start time: 09:19:52 on Sep 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# 
+# Use vdir -l command to find such design units.
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.aes_top(fast)
+# Loading work.aes_cfg(fast)
+# Loading work.aes_axir(fast)
+# Loading work.aes_flow_ctrl(fast)
+# Loading work.aes_core(fast)
+# Loading work.aes_encipher_block(fast)
+# Loading work.aes_decipher_block_fast(fast)
+# Loading work.aes_inv_sbox_fast(fast)
+# Loading work.aes_key_mem(fast)
+# Loading work.aes_sbox_lut(fast)
+# Loading work.reg_file_wbe(fast)
+# Loading work.aes_axiw(fast)
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(215): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(232): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(245): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# hexadecimal
+# Info: sim case info:
+# Encrypt case.
+# 256 bit key length
+# CBC mode in a bulk data
+# Total test bulk number: 0000000a.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(250)
+#    Time: 27746 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 250
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 09:20:14 on Sep 04,2024
+# vlog -reportprogress 300 -O0 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module aes_top
+# -- Compiling module aes_cfg
+# -- Compiling module aes_flow_ctrl
+# -- Compiling module aes_axir
+# -- Compiling module aes_axiw
+# -- Compiling module aes_core
+# -- Compiling module aes_sbox_lut
+# -- Compiling module aes_key_mem
+# -- Compiling module aes_encipher_block
+# -- Compiling module aes_decipher_block_fast
+# -- Compiling module aes_inv_sbox_fast
+# -- Compiling module reg_file_wbe
+# 
+# Top level modules:
+# 	tb
+# End time: 09:20:14 on Sep 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:20:16 on Sep 04,2024, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 4
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -noglitch -L ./work -l load.log tb 
+# Start time: 09:20:16 on Sep 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# 
+# Use vdir -l command to find such design units.
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.aes_top(fast)
+# Loading work.aes_cfg(fast)
+# Loading work.aes_axir(fast)
+# Loading work.aes_flow_ctrl(fast)
+# Loading work.aes_core(fast)
+# Loading work.aes_encipher_block(fast)
+# Loading work.aes_decipher_block_fast(fast)
+# Loading work.aes_inv_sbox_fast(fast)
+# Loading work.aes_key_mem(fast)
+# Loading work.aes_sbox_lut(fast)
+# Loading work.reg_file_wbe(fast)
+# Loading work.aes_axiw(fast)
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(215): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(232): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(245): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# hexadecimal
+# Info: sim case info:
+# Decrypt case.
+# 256 bit key length
+# CBC mode in a bulk data
+# Total test bulk number: 0000000a.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(250)
+#    Time: 27746 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 250
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 09:20:38 on Sep 04,2024
+# vlog -reportprogress 300 -O0 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module aes_top
+# -- Compiling module aes_cfg
+# -- Compiling module aes_flow_ctrl
+# -- Compiling module aes_axir
+# -- Compiling module aes_axiw
+# -- Compiling module aes_core
+# -- Compiling module aes_sbox_lut
+# -- Compiling module aes_key_mem
+# -- Compiling module aes_encipher_block
+# -- Compiling module aes_decipher_block_fast
+# -- Compiling module aes_inv_sbox_fast
+# -- Compiling module reg_file_wbe
+# 
+# Top level modules:
+# 	tb
+# End time: 09:20:38 on Sep 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:20:41 on Sep 04,2024, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 4
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -noglitch -L ./work -l load.log tb 
+# Start time: 09:20:41 on Sep 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# 
+# Use vdir -l command to find such design units.
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.aes_top(fast)
+# Loading work.aes_cfg(fast)
+# Loading work.aes_axir(fast)
+# Loading work.aes_flow_ctrl(fast)
+# Loading work.aes_core(fast)
+# Loading work.aes_encipher_block(fast)
+# Loading work.aes_decipher_block_fast(fast)
+# Loading work.aes_inv_sbox_fast(fast)
+# Loading work.aes_key_mem(fast)
+# Loading work.aes_sbox_lut(fast)
+# Loading work.reg_file_wbe(fast)
+# Loading work.aes_axiw(fast)
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(215): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(232): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(245): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# hexadecimal
+# Info: sim case info:
+# Decrypt case.
+# 128 bit key length
+# CBC mode in a bulk data
+# Total test bulk number: 0000000a.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(250)
+#    Time: 23586 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 250
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 09:20:58 on Sep 04,2024
+# vlog -reportprogress 300 -O0 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module aes_top
+# -- Compiling module aes_cfg
+# -- Compiling module aes_flow_ctrl
+# -- Compiling module aes_axir
+# -- Compiling module aes_axiw
+# -- Compiling module aes_core
+# -- Compiling module aes_sbox_lut
+# -- Compiling module aes_key_mem
+# -- Compiling module aes_encipher_block
+# -- Compiling module aes_decipher_block_fast
+# -- Compiling module aes_inv_sbox_fast
+# -- Compiling module reg_file_wbe
+# 
+# Top level modules:
+# 	tb
+# End time: 09:20:58 on Sep 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:21:00 on Sep 04,2024, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 4
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -noglitch -L ./work -l load.log tb 
+# Start time: 09:21:00 on Sep 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# 
+# Use vdir -l command to find such design units.
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.aes_top(fast)
+# Loading work.aes_cfg(fast)
+# Loading work.aes_axir(fast)
+# Loading work.aes_flow_ctrl(fast)
+# Loading work.aes_core(fast)
+# Loading work.aes_encipher_block(fast)
+# Loading work.aes_decipher_block_fast(fast)
+# Loading work.aes_inv_sbox_fast(fast)
+# Loading work.aes_key_mem(fast)
+# Loading work.aes_sbox_lut(fast)
+# Loading work.reg_file_wbe(fast)
+# Loading work.aes_axiw(fast)
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(215): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(232): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(245): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# hexadecimal
+# Info: sim case info:
+# Decrypt case.
+# 256 bit key length
+# ECB mode in a bulk data
+# Total test bulk number: 0000000a.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(250)
+#    Time: 27746 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 250
+do run_sim.do
+# Model Technology ModelSim SE-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 09:21:22 on Sep 04,2024
+# vlog -reportprogress 300 -O0 -vlog01compat -f flist.f 
+# -- Compiling module tb
+# -- Compiling module axi32_slave_model
+# -- Compiling module apb_ms_model
+# -- Compiling module aes_top
+# -- Compiling module aes_cfg
+# -- Compiling module aes_flow_ctrl
+# -- Compiling module aes_axir
+# -- Compiling module aes_axiw
+# -- Compiling module aes_core
+# -- Compiling module aes_sbox_lut
+# -- Compiling module aes_key_mem
+# -- Compiling module aes_encipher_block
+# -- Compiling module aes_decipher_block_fast
+# -- Compiling module aes_inv_sbox_fast
+# -- Compiling module reg_file_wbe
+# 
+# Top level modules:
+# 	tb
+# End time: 09:21:22 on Sep 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:21:24 on Sep 04,2024, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 4
+# vsim -c "+nowarnTSCALE" -voptargs="+acc" -noglitch -L ./work -l load.log tb 
+# Start time: 09:21:24 on Sep 04,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# 
+# Use vdir -l command to find such design units.
+# 
+# Loading work.tb(fast)
+# Loading work.apb_ms_model(fast)
+# Loading work.axi32_slave_model(fast)
+# Loading work.aes_top(fast)
+# Loading work.aes_cfg(fast)
+# Loading work.aes_axir(fast)
+# Loading work.aes_flow_ctrl(fast)
+# Loading work.aes_core(fast)
+# Loading work.aes_encipher_block(fast)
+# Loading work.aes_decipher_block_fast(fast)
+# Loading work.aes_inv_sbox_fast(fast)
+# Loading work.aes_key_mem(fast)
+# Loading work.aes_sbox_lut(fast)
+# Loading work.reg_file_wbe(fast)
+# Loading work.aes_axiw(fast)
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(215): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(232): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# ** Warning: (vsim-PLI-3691) ../pattern/apb_ms_model.v(245): Expected a system task, not a system function '$fseek'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/u_apb_ms_model File: ../pattern/apb_ms_model.v
+# hexadecimal
+# Info: sim case info:
+# Decrypt case.
+# 128 bit key length
+# ECB mode in a bulk data
+# Total test bulk number: 0000000a.
+# 
+# OK: sim pass.
+# ** Note: $finish    : ../pattern/apb_ms_model.v(250)
+#    Time: 23396 ns  Iteration: 0  Instance: /tb/u_apb_ms_model
+# 1
+# Break in Module apb_ms_model at ../pattern/apb_ms_model.v line 250
+# End time: 09:21:38 on Sep 04,2024, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 4

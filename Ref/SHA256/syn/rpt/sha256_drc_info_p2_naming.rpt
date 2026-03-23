@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : constraint
+        -verbose
+        -max_capacitance
+        -max_fanout
+        -max_transition
+Design : sha256
+Version: O-2018.06-SP1
+Date   : Fri Sep 15 10:31:35 2023
+****************************************
+
+
+    Net: araddr[3]
+
+    max_transition         1.50
+  - Transition Time        0.91
+  ------------------------------
+    Slack                  0.59  (MET)
+
+
+    Net: bulk_fir_ini
+
+    max_fanout            30.00
+  - Fanout                10.00
+  ------------------------------
+    Slack                 20.00  (MET)
+
+
+    Net: araddr[3]
+
+    max_capacitance        0.26
+  - Capacitance            0.21
+  ------------------------------
+    Slack                  0.04  (MET)
+
+
+1

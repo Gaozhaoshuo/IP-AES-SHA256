@@ -1,0 +1,145 @@
+$date
+	Fri Sep 15 10:17:13 2023
+
+$end
+$version
+	BMC-0.1
+$end
+$timescale
+	1ps
+$end
+
+$var integer 16 verification_cycle verification_cycle $end
+$scope module sha256 $end
+
+$scope module u_sha256_axir $end
+
+$var wire 1 & axi_cmd_ack $end
+$var wire 1 ' axi_bt_go $end
+$var wire 1 ( cross_4kb_w $end
+$var wire 1 ) cross_4kb $end
+$var wire 1 * FML_WA_0 $end
+$var wire 1 + rtlc_N259 $end
+$var wire 2 , sta [1:0] $end
+$var wire 10 - axi_addr [11:2] $end
+$var wire 32 . blk_len [31:0] $end
+$var wire 33 / nxt_blk_len [32:0] $end
+$var wire 2 0 blk_osd_cmd [1:0] $end
+$var wire 11 1 addr_add_low [12:2] $end
+$var wire 4 2 cmd0_len_w [3:0] $end
+$var wire 4 3 cmd1_len_w [3:0] $end
+$var wire 4 4 cmd0_len [3:0] $end
+$var wire 4 5 cmd1_len [3:0] $end
+$var wire 4 6 cur_len [3:0] $end
+$upscope $end
+
+$var wire 1 7 arvalid $end
+$var wire 1 8 arready $end
+$var wire 1 9 clk $end
+$var wire 1 : rstn $end
+$var wire 1 ; cfg_blk_sof $end
+$var wire 1 < sha_blk_end $end
+$var wire 10 = cfg_blk_base [11:2] $end
+$var wire 32 > cfg_blk_len [31:0] $end
+$upscope $end
+
+$enddefinitions $end
+
+#0
+b0000000000000000 verification_cycle
+
+0&
+0'
+0(
+0)
+0*
+0+
+b00 ,
+b0000000000 -
+b00000000000000000000000000000000 .
+b111111111111111111111111111111100 /
+b00 0
+b0XXXXXX1111 1
+b1111 2
+b1111 3
+b0000 4
+b0000 5
+b0000 6
+07
+08
+09
+1:
+0;
+0<
+b0000000000 =
+b00000000000000000000000000000000 >
+
+#5000
+b0000000000000001 verification_cycle
+
+19
+1;
+b1111111111 =
+
+#10000
+b0000000000000010 verification_cycle
+
+09
+
+#15000
+b0000000000000011 verification_cycle
+
+1'
+1(
+b01 ,
+b1111111111 -
+b1XXXXXX1110 1
+b0000 2
+b1110 3
+19
+0;
+
+#20000
+b0000000000000100 verification_cycle
+
+09
+
+#25000
+b0000000000000101 verification_cycle
+
+1&
+0'
+1)
+1+
+b10 ,
+b01 0
+b1110 5
+17
+18
+19
+
+#30000
+b0000000000000110 verification_cycle
+
+09
+
+#35000
+b0000000000000111 verification_cycle
+
+0&
+0(
+1*
+0+
+b00 ,
+b0000000000 -
+b11111111111111111111111111111100 .
+b011111111111111111111111111000000 /
+b0XXXXXX1111 1
+b1111 2
+b1111 3
+b1110 6
+07
+08
+19
+
+#40000

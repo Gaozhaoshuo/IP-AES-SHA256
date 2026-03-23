@@ -1,0 +1,26 @@
+*design* DebussyLib (btIdent 3.3v9)
+Command arguments:
+    +define+verilog
+    -f flist.f
+        +incdir+../pattern/
+        ../pattern/tb.v
+        ../pattern/axi32_slave_model.v
+        ../pattern/apb_ms_model.v
+        ../pattern/sha256_trc.v
+        ../rtl/sha256.v
+        ../rtl/sha256_cfg.v
+        ../rtl/sha256_axir.v
+        ../rtl/sha256_flow_ctl.v
+        ../rtl/sha256_core.v
+        ../rtl/sha256_k_lut.v
+        ../rtl/sha256_w_reg.v
+        ../rtl/sha256_loop.v
+        ../rtl/sync_fifo.v
+    -2001
+    -top
+    tb
+
+Highest level modules:
+tb
+
+Total	0 error(s),   0 warning(s)

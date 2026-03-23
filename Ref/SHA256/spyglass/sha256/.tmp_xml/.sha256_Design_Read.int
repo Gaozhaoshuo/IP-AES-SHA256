@@ -1,0 +1,5 @@
+INPUT@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/Design_Read/spyglass_reports@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/html_reports/data_files/@@sha256@@Design_Read@@
+COPY@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/Design_Read/spyglass_reports/moresimple.rpt@@data_files/sha256_Design_Read_moresimple.rpt@@
+COPY@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/Design_Read/spyglass_reports/no_msg_reporting_rules.rpt@@data_files/sha256_Design_Read_no_msg_reporting_rules.rpt@@
+PROCESS@@SpyGlass
+COPY@@/media/yyx/B63E46DF3E46986F/new_proj/sha256/spyglass/sha256/sha256/Design_Read/spyglass.log@@data_files/sha256_Design_Read_spyglass.log@@

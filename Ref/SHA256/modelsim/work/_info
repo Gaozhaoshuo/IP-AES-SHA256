@@ -1,0 +1,304 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/new_proj/sha256/modelsim
+T_opt
+!s110 1694663438
+V78]IHTCMIWaQlO3JL@XnO0
+04 2 4 work tb fast 0
+=1-f832e48c297c-6502830e-272-d10
+o-quiet -auto_acc_if_foreign -work work -L ./work +acc
+n@_opt
+OL;O;10.4c;61
+vapb_ms_model
+Z1 !s110 1694663433
+!i10b 1
+!s100 dY@m?DOO@j?Ym;mboKJ[g2
+I21W`HK;D3B=J>6A6;VGNI3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1694663426
+8../pattern/apb_ms_model.v
+F../pattern/apb_ms_model.v
+Z3 L0 29
+Z4 OL;L;10.4c;61
+r1
+!s85 0
+31
+Z5 !s108 1694663433.000000
+Z6 !s107 ../pattern//sha_sim_def.v|../rtl/sync_fifo.v|../rtl/sha256_loop.v|../rtl/sha256_w_reg.v|../rtl/sha256_k_lut.v|../rtl/sha256_core.v|../rtl/sha256_flow_ctl.v|../rtl/sha256_axir.v|../rtl/sha256_cfg.v|../rtl/sha256.v|../pattern/sha256_trc.v|../pattern/apb_ms_model.v|../pattern/axi32_slave_model.v|../pattern/tb.v|
+Z7 !s90 -reportprogress|300|-O4|-vlog01compat|-f|flist.f|
+!s101 -O4
+!i113 0
+Z8 o-O4 -vlog01compat -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -O4 -vlog01compat +incdir+../pattern/ -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vaxi32_slave_model
+R1
+!i10b 1
+!s100 <4>UQQl1SO?9ao4]83RMQ1
+IWVnFOZ<WkIa]D<<GD3?UV3
+R2
+R0
+w1694657149
+8../pattern/axi32_slave_model.v
+F../pattern/axi32_slave_model.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vsha256
+R1
+!i10b 1
+!s100 3@C4Kb@?k1U<F_eF`A6C?2
+Iz8URdT_l:`ZeUV_HSBPh53
+R2
+R0
+w1694659168
+8../rtl/sha256.v
+F../rtl/sha256.v
+Z10 L0 25
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vsha256_axir
+R1
+!i10b 1
+!s100 35z_ngPAj=P63zMP0@NCg2
+IE=PS=LQDNalGS7IWIzFNA2
+R2
+R0
+w1694661439
+8../rtl/sha256_axir.v
+F../rtl/sha256_axir.v
+L0 28
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vsha256_cfg
+R1
+!i10b 1
+!s100 oVf^kQ7M8h=TY3zDX6@=83
+IUcALI<1AKYmjQIZDTC7QK2
+R2
+R0
+w1694661087
+8../rtl/sha256_cfg.v
+F../rtl/sha256_cfg.v
+R10
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vsha256_core
+R1
+!i10b 1
+!s100 >^n6=7:YADXY@Aj]8>T8<2
+I@@5EaZTABG=PM?05m@=Ed0
+R2
+R0
+w1694660796
+8../rtl/sha256_core.v
+F../rtl/sha256_core.v
+R10
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vsha256_flow_ctl
+R1
+!i10b 1
+!s100 61CD@Q9_Tg@Rk3`ijbYao3
+In>Y061Aij;z]QlC;z8HD83
+R2
+R0
+w1694589785
+8../rtl/sha256_flow_ctl.v
+F../rtl/sha256_flow_ctl.v
+Z11 L0 27
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vsha256_k_lut
+R1
+!i10b 1
+!s100 0UHh:HX`7C_oZ;<jm]ke?1
+IRnS=Bhkd9W29]ee^5Hz=f2
+R2
+R0
+w1694589812
+8../rtl/sha256_k_lut.v
+F../rtl/sha256_k_lut.v
+R10
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vsha256_loop
+R1
+!i10b 1
+!s100 3A5k]F1lCS:9EKfZg:JS32
+IXY]K^IEZEOm]OBXh:iMj]1
+R2
+R0
+w1694589444
+8../rtl/sha256_loop.v
+F../rtl/sha256_loop.v
+L0 26
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vsha256_trc
+R1
+!i10b 1
+!s100 U^AGg4Jz@Zo^CSKW5B8F22
+I=H_U2Ed96kM8O[4UWQYY=1
+R2
+R0
+w1694658961
+8../pattern/sha256_trc.v
+F../pattern/sha256_trc.v
+R11
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vsha256_w_reg
+R1
+!i10b 1
+!s100 lN9PM@9[Tko>QBON??;oB3
+I86ibgUkhmQF=EMCj@4BO31
+R2
+R0
+w1694589876
+8../rtl/sha256_w_reg.v
+F../rtl/sha256_w_reg.v
+R10
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vsync_fifo
+R1
+!i10b 1
+!s100 aYP:]9Z_^:Y:aFhWP7_1Z2
+Ii7EYB:@8H]31LS1lU9nN^1
+R2
+R0
+w1694065092
+8../rtl/sync_fifo.v
+F../rtl/sync_fifo.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9
+vtb
+R1
+!i10b 1
+!s100 HZjY9H^AERG`?Db;XfP5?2
+I<U5egXoMRf:kTfkTM2nZ@3
+R2
+R0
+w1694658996
+8../pattern/tb.v
+F../pattern/tb.v
+L0 31
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O4
+!i113 0
+R8
+R9

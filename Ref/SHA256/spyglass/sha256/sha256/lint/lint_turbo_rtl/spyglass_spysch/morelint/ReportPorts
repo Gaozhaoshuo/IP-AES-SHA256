@@ -1,0 +1,27 @@
+SCHEMA@@PName@@Dir@@Msb@@Lsb@@Desc@@DU@@DU_BBOX
+VALUE@@psel@@INPUT@@0@@0@@--- APB configure inf@@sha256@@No
+VALUE@@penable@@INPUT@@0@@0@@-@@sha256@@No
+VALUE@@paddr@@INPUT@@7@@0@@byte addr@@sha256@@No
+VALUE@@pwrite@@INPUT@@0@@0@@-@@sha256@@No
+VALUE@@pwdata@@INPUT@@31@@0@@-@@sha256@@No
+VALUE@@pready@@OUTPUT@@0@@0@@-@@sha256@@No
+VALUE@@prdata@@OUTPUT@@31@@0@@-@@sha256@@No
+VALUE@@arid@@OUTPUT@@3@@0@@0@@sha256@@No
+VALUE@@araddr@@OUTPUT@@31@@0@@-@@sha256@@No
+VALUE@@arlen@@OUTPUT@@3@@0@@-@@sha256@@No
+VALUE@@arsize@@OUTPUT@@2@@0@@-@@sha256@@No
+VALUE@@arburst@@OUTPUT@@1@@0@@-@@sha256@@No
+VALUE@@arlock@@OUTPUT@@1@@0@@-@@sha256@@No
+VALUE@@arcache@@OUTPUT@@3@@0@@-@@sha256@@No
+VALUE@@arprot@@OUTPUT@@2@@0@@-@@sha256@@No
+VALUE@@arvalid@@OUTPUT@@0@@0@@-@@sha256@@No
+VALUE@@arready@@INPUT@@0@@0@@-@@sha256@@No
+VALUE@@rid@@INPUT@@3@@0@@-@@sha256@@No
+VALUE@@rdata@@INPUT@@31@@0@@-@@sha256@@No
+VALUE@@rresp@@INPUT@@1@@0@@-@@sha256@@No
+VALUE@@rlast@@INPUT@@0@@0@@-@@sha256@@No
+VALUE@@rvalid@@INPUT@@0@@0@@-@@sha256@@No
+VALUE@@rready@@OUTPUT@@0@@0@@-@@sha256@@No
+VALUE@@intr@@OUTPUT@@0@@0@@-@@sha256@@No
+VALUE@@clk@@INPUT@@0@@0@@-@@sha256@@No
+VALUE@@rstn@@INPUT@@0@@0@@-@@sha256@@No

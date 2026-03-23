@@ -1,0 +1,83 @@
+$date
+	Fri Sep 15 10:17:41 2023
+
+$end
+$version
+	BMC-0.1
+$end
+$timescale
+	1ps
+$end
+
+$var integer 16 verification_cycle verification_cycle $end
+$scope module sha256 $end
+
+$var wire 1 & psel $end
+$var wire 1 ' penable $end
+$var wire 8 ( paddr [7:0] $end
+$var wire 1 0 pwrite $end
+$var wire 32 1 pwdata [31:0] $end
+$var wire 1 Q arready $end
+$var wire 4 R rid [3:0] $end
+$var wire 32 V rdata [31:0] $end
+$var wire 2 v rresp [1:0] $end
+$var wire 1 x rlast $end
+$var wire 1 y rvalid $end
+$var wire 1 z rstn $end
+$var wire 1 { clk $end
+$upscope $end
+
+$enddefinitions $end
+
+#0
+b0000000000000000 verification_cycle
+
+0z
+1{
+
+#5000
+b0000000000000001 verification_cycle
+
+0{
+
+#10000
+b0000000000000010 verification_cycle
+
+1{
+
+#15000
+b0000000000000011 verification_cycle
+
+0{
+
+#20000
+b0000000000000100 verification_cycle
+
+1{
+
+#25000
+b0000000000000101 verification_cycle
+
+0{
+
+#30000
+b0000000000000110 verification_cycle
+
+1{
+
+#35000
+b0000000000000111 verification_cycle
+
+0{
+
+#40000
+b0000000000001000 verification_cycle
+
+1{
+
+#45000
+b0000000000001001 verification_cycle
+
+0{
+
+#50000

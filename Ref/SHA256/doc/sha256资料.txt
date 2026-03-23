@@ -1,0 +1,5 @@
+
+A:keyed-hash message authentication algorithm: hmacsha256(±ê×¼£ºSP 800-107)¡£
+  https://blog.csdn.net/sdnyqfyqf/article/details/105534376
+  https://docs.tongdelove.com/docs/0x08/se/basic/middleware/%E9%AA%8C%E8%AF%81/HMAC%E6%B6%88%E6%81%AF%E9%AA%8C%E8%AF%81/
+

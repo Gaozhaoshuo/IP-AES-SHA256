@@ -1,0 +1,7 @@
+
+current_design aes_top
+
+clock  -name clk  -period 10 -edge {0 5}  -domain clk
+reset  -name rstn -value  0
+
+

@@ -1,0 +1,9 @@
+0 ../rtl/sha256.v
+1 ../rtl/sha256_cfg.v
+2 ../rtl/sha256_axir.v
+3 ../rtl/sha256_flow_ctl.v
+4 ../rtl/sha256_core.v
+5 ../rtl/sha256_k_lut.v
+6 ../rtl/sha256_w_reg.v
+7 ../rtl/sha256_loop.v
+8 ../rtl/sync_fifo.v

@@ -1,0 +1,30 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dc:/gaozs/prj/securelink/src/AES
+vaes_key_mem
+!s110 1772069387
+!i10b 1
+!s100 YBMLW^RdCH=9F7Nk;VaWG2
+ID1MC;E2Q@?e5eifU1F^>?1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1772069387
+8c:\gaozs\prj\securelink\src\AES\aes_key_mem_new.v
+Fc:\gaozs\prj\securelink\src\AES\aes_key_mem_new.v
+L0 1
+OL;L;10.4c;61
+r1
+!s85 0
+31
+!s108 1772069387.000000
+!s107 c:\gaozs\prj\securelink\src\AES\aes_key_mem_new.v|
+!s90 -nologo|-work|work|c:\gaozs\prj\securelink\src\AES\aes_key_mem_new.v|
+!i113 0
+o-nologo -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact

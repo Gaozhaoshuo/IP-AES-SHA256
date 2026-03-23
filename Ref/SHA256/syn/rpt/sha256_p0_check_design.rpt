@@ -1,0 +1,240 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Fri Sep 15 10:31:04 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    128
+    Unconnected ports (LINT-28)                                    26
+    Feedthrough (LINT-29)                                          64
+    Shorted outputs (LINT-31)                                      18
+    Constant outputs (LINT-52)                                     20
+
+Cells                                                              44
+    Cells do not drive (LINT-1)                                    10
+    Connected to power or ground (LINT-32)                         34
+
+Nets                                                               10
+    Unloaded nets (LINT-2)                                         10
+--------------------------------------------------------------------------------
+
+Warning: In design 'sha256_axir', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'sha256_axir', cell 'C417' does not drive any nets. (LINT-1)
+Warning: In design 'sha256_axir', cell 'C428' does not drive any nets. (LINT-1)
+Warning: In design 'sha256_axir', cell 'C438' does not drive any nets. (LINT-1)
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', cell 'C1145' does not drive any nets. (LINT-1)
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', cell 'C1147' does not drive any nets. (LINT-1)
+Warning: In design 'sha256_flow_ctl', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'sha256_loop', cell 'C2214' does not drive any nets. (LINT-1)
+Warning: In design 'sha256_loop', cell 'C2229' does not drive any nets. (LINT-1)
+Warning: In design 'sha256_loop', cell 'C2245' does not drive any nets. (LINT-1)
+Warning: In design 'sha256', net 'ibuf_waddr[0]' driven by pin 'u_sha256_axir/ibuf_waddr[0]' has no loads. (LINT-2)
+Warning: In design 'sha256', net 'ibuf_waddr[1]' driven by pin 'u_sha256_axir/ibuf_waddr[1]' has no loads. (LINT-2)
+Warning: In design 'sha256', net 'ibuf_waddr[2]' driven by pin 'u_sha256_axir/ibuf_waddr[2]' has no loads. (LINT-2)
+Warning: In design 'sha256', net 'ibuf_waddr[3]' driven by pin 'u_sha256_axir/ibuf_waddr[3]' has no loads. (LINT-2)
+Warning: In design 'sha256', net 'u_sha256_cfg/N1' driven by pin 'u_sha256_cfg/B_1/Z' has no loads. (LINT-2)
+Warning: In design 'sha256', net 'u_sha256_cfg/N0' driven by pin 'u_sha256_cfg/B_0/Z' has no loads. (LINT-2)
+Warning: In design 'sha256', net 'u_sync_fifo/N9' driven by pin 'u_sync_fifo/B_1/Z' has no loads. (LINT-2)
+Warning: In design 'sha256', net 'u_sha256_flow_ctl/N8' driven by pin 'u_sha256_flow_ctl/I_5/Z' has no loads. (LINT-2)
+Warning: In design 'sha256', net 'u_sha256_core/u_loop/N518' driven by pin 'u_sha256_core/u_loop/C1763/Z_2' has no loads. (LINT-2)
+Warning: In design 'sha256', net 'u_sha256_core/u_loop/N514' driven by pin 'u_sha256_core/u_loop/C1763/Z_0' has no loads. (LINT-2)
+Warning: In design 'sha256_cfg', port 'paddr[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_cfg', port 'paddr[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_cfg', port 'paddr[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_cfg', port 'paddr[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_axir', port 'cfg_blk_base[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_axir', port 'cfg_blk_base[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_axir', port 'rid[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_axir', port 'rid[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_axir', port 'rid[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_axir', port 'rid[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_axir', port 'rresp[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_axir', port 'rresp[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_axir', port 'rlast' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_flow_ctl', port 'axi_bulk_end' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_k_lut', port 'rstn' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'msg_dcnt[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'msg_dcnt[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'msg_dcnt[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'msg_dcnt[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'loop_cnt[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'loop_cnt[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'loop_cnt[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'loop_cnt[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'loop_cnt[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'loop_cnt[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_w_reg', port 'rstn' is not connected to any nets. (LINT-28)
+Warning: In design 'sha256_axir', input port 'rdata[31]' is connected directly to output port 'ibuf_wdata[7]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[30]' is connected directly to output port 'ibuf_wdata[6]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[29]' is connected directly to output port 'ibuf_wdata[5]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[28]' is connected directly to output port 'ibuf_wdata[4]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[27]' is connected directly to output port 'ibuf_wdata[3]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[26]' is connected directly to output port 'ibuf_wdata[2]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[25]' is connected directly to output port 'ibuf_wdata[1]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[24]' is connected directly to output port 'ibuf_wdata[0]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[23]' is connected directly to output port 'ibuf_wdata[15]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[22]' is connected directly to output port 'ibuf_wdata[14]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[21]' is connected directly to output port 'ibuf_wdata[13]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[20]' is connected directly to output port 'ibuf_wdata[12]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[19]' is connected directly to output port 'ibuf_wdata[11]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[18]' is connected directly to output port 'ibuf_wdata[10]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[17]' is connected directly to output port 'ibuf_wdata[9]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[16]' is connected directly to output port 'ibuf_wdata[8]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[15]' is connected directly to output port 'ibuf_wdata[23]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[14]' is connected directly to output port 'ibuf_wdata[22]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[13]' is connected directly to output port 'ibuf_wdata[21]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[12]' is connected directly to output port 'ibuf_wdata[20]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[11]' is connected directly to output port 'ibuf_wdata[19]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[10]' is connected directly to output port 'ibuf_wdata[18]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[9]' is connected directly to output port 'ibuf_wdata[17]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[8]' is connected directly to output port 'ibuf_wdata[16]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[7]' is connected directly to output port 'ibuf_wdata[31]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[6]' is connected directly to output port 'ibuf_wdata[30]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[5]' is connected directly to output port 'ibuf_wdata[29]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[4]' is connected directly to output port 'ibuf_wdata[28]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[3]' is connected directly to output port 'ibuf_wdata[27]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[2]' is connected directly to output port 'ibuf_wdata[26]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[1]' is connected directly to output port 'ibuf_wdata[25]'. (LINT-29)
+Warning: In design 'sha256_axir', input port 'rdata[0]' is connected directly to output port 'ibuf_wdata[24]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[31]' is connected directly to output port 'msg_data[31]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[30]' is connected directly to output port 'msg_data[30]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[29]' is connected directly to output port 'msg_data[29]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[28]' is connected directly to output port 'msg_data[28]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[27]' is connected directly to output port 'msg_data[27]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[26]' is connected directly to output port 'msg_data[26]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[25]' is connected directly to output port 'msg_data[25]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[24]' is connected directly to output port 'msg_data[24]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[23]' is connected directly to output port 'msg_data[23]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[22]' is connected directly to output port 'msg_data[22]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[21]' is connected directly to output port 'msg_data[21]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[20]' is connected directly to output port 'msg_data[20]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[19]' is connected directly to output port 'msg_data[19]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[18]' is connected directly to output port 'msg_data[18]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[17]' is connected directly to output port 'msg_data[17]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[16]' is connected directly to output port 'msg_data[16]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[15]' is connected directly to output port 'msg_data[15]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[14]' is connected directly to output port 'msg_data[14]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[13]' is connected directly to output port 'msg_data[13]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[12]' is connected directly to output port 'msg_data[12]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[11]' is connected directly to output port 'msg_data[11]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[10]' is connected directly to output port 'msg_data[10]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[9]' is connected directly to output port 'msg_data[9]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[8]' is connected directly to output port 'msg_data[8]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[7]' is connected directly to output port 'msg_data[7]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[6]' is connected directly to output port 'msg_data[6]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[5]' is connected directly to output port 'msg_data[5]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[4]' is connected directly to output port 'msg_data[4]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[3]' is connected directly to output port 'msg_data[3]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[2]' is connected directly to output port 'msg_data[2]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[1]' is connected directly to output port 'msg_data[1]'. (LINT-29)
+Warning: In design 'sha256_flow_ctl', input port 'ibuf_rdata[0]' is connected directly to output port 'msg_data[0]'. (LINT-29)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arprot[0]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arprot[1]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arprot[2]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arcache[2]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arcache[3]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arlock[0]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arlock[1]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arburst[1]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arsize[0]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arsize[2]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arid[0]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arid[1]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to output port 'arid[2]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arsize[1]' is connected directly to output port 'rready'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arsize[1]' is connected directly to output port 'arcache[0]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arsize[1]' is connected directly to output port 'arcache[1]'. (LINT-31)
+Warning: In design 'sha256_axir', output port 'arsize[1]' is connected directly to output port 'arburst[0]'. (LINT-31)
+Warning: In design 'sha256_flow_ctl', output port 'ibuf_pop' is connected directly to output port 'msg_vld'. (LINT-31)
+Warning: In design 'sha256_cfg', a pin on submodule 'clk_gate_cfg_blk_len_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_cfg', a pin on submodule 'clk_gate_cfg_blk_base_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_cfg', a pin on submodule 'clk_gate_ml' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_cfg', a pin on submodule 'clk_gate_prdata_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_cfg', a pin on submodule 'clk_gate_ml_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_axir', a pin on submodule 'clk_gate_axi_addr_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_axir', a pin on submodule 'clk_gate_cross_4kb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_axir', a pin on submodule 'clk_gate_ibuf_waddr_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[8]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[9]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[10]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[11]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[12]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[13]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[14]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[15]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_ml' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[0]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[1]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[2]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[3]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[4]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[5]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[6]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_mem_reg[7]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_ml_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_wr_ptr_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4', a pin on submodule 'clk_gate_rd_ptr_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_flow_ctl', a pin on submodule 'clk_gate_msg_dcnt_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_k_lut', a pin on submodule 'clk_gate_k_lut_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_w_reg', a pin on submodule 'clk_gate_w_mem_reg[0]' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_loop', a pin on submodule 'clk_gate_loop_cnt_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_loop', a pin on submodule 'clk_gate_h7_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_loop', a pin on submodule 'clk_gate_f_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'sha256_cfg', output port 'pready' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arid[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arid[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arid[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arid[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arsize[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arsize[1]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arsize[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arburst[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arburst[0]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arlock[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arlock[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arcache[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arcache[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arcache[1]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arcache[0]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arprot[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arprot[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'arprot[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'sha256_axir', output port 'rready' is connected directly to 'logic 1'. (LINT-52)
+1

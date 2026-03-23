@@ -1,0 +1,19 @@
+Date Created     : 15-09-2023 10:17:21
+SpyGlass Version : SpyGlass_vL-2016.06
+Project Name     : sha256
+Goal Name        : lint/lint_functional_rtl
+Scenario Name    : default_scenario
+Top              : sha256
+
+Message Summary
+Severity   Non-Waived  Waived
+FATAL           0         0
+ERROR           0         0
+WARNING         1         0
+INFO            5         0
+
+-dashboard_data advanced_lint_partial_proven_properties 0
+-dashboard_data advanced_lint_failed_properties 1
+-dashboard_data advanced_lint_total_properties 1
+-dashboard_data advanced_lint_average_depth 
+-dashboard_data advanced_lint_minimum_depth 

@@ -1,0 +1,1018 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : sha256
+Version: O-2018.06-SP1
+Date   : Fri Sep 15 10:31:35 2023
+****************************************
+
+
+  Startpoint: u_sync_fifo/clk_gate_wr_ptr_reg_3/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_wr_ptr_reg_3/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_wr_ptr_reg_3/latch/GN (TLATNX1)     0.00      3.00 f
+  u_sync_fifo/clk_gate_wr_ptr_reg_3/latch/Q (TLATNX1)     0.12       3.12 r
+  u_sync_fifo/clk_gate_wr_ptr_reg_3/main_gate/A (AND2X1)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_wr_ptr_reg_3/main_gate/B (AND2X1)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/main_gate/A (AND2X1)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_flow_ctl/clk_gate_msg_dcnt_reg_0/main_gate/B (AND2X1)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_axir/clk_gate_cmd1_len_reg_0/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_axir/clk_gate_cmd1_len_reg_0/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_axir/clk_gate_cmd1_len_reg_0/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_axir/clk_gate_cmd1_len_reg_0/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_axir/clk_gate_cmd1_len_reg_0/main_gate/A (AND2X1)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_axir/clk_gate_cmd1_len_reg_0/main_gate/B (AND2X1)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_cfg/clk_gate_ml/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_cfg/clk_gate_ml/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_cfg/clk_gate_ml/latch/GN (TLATNX1)             0.00       3.00 f
+  u_sha256_cfg/clk_gate_ml/latch/Q (TLATNX1)              0.12       3.12 r
+  u_sha256_cfg/clk_gate_ml/main_gate/A (AND2X1)           0.00       3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_cfg/clk_gate_ml/main_gate/B (AND2X1)           0.00       3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_cfg/clk_gate_ml_0/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_cfg/clk_gate_ml_0/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_cfg/clk_gate_ml_0/latch/GN (TLATNX1)           0.00       3.00 f
+  u_sha256_cfg/clk_gate_ml_0/latch/Q (TLATNX1)            0.12       3.12 r
+  u_sha256_cfg/clk_gate_ml_0/main_gate/A (AND2X1)         0.00       3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_cfg/clk_gate_ml_0/main_gate/B (AND2X1)         0.00       3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_ml_0/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_ml_0/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_ml_0/latch/GN (TLATNX1)            0.00       3.00 f
+  u_sync_fifo/clk_gate_ml_0/latch/Q (TLATNX1)             0.12       3.12 r
+  u_sync_fifo/clk_gate_ml_0/main_gate/A (AND2X2)          0.00       3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_ml_0/main_gate/B (AND2X2)          0.00       3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_8_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_8_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_8_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_8_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_8_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_8_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_9_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_9_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_9_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_9_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_9_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_9_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_10_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_10_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_10_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_10_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_10_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_10_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_11_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_11_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_11_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_11_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_11_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_11_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_12_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_12_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_12_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_12_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_12_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_12_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_13_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_13_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_13_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_13_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_13_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_13_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_14_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_14_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_14_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_14_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_14_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_14_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_15_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_15_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_15_/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_15_/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_15_/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_15_/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_ml_3/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_ml_3/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_ml_3/latch/GN (TLATNX1)            0.00       3.00 f
+  u_sync_fifo/clk_gate_ml_3/latch/Q (TLATNX1)             0.12       3.12 r
+  u_sync_fifo/clk_gate_ml_3/main_gate/A (AND2X2)          0.00       3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_ml_3/main_gate/B (AND2X2)          0.00       3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_0_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_0_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_0_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_0_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_0_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_0_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_2_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_2_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_2_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_2_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_2_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_2_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_4_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_4_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_4_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_4_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_4_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_4_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_6_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_6_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_6_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_6_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_6_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_6_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_7_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_7_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_7_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_7_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_7_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_7_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_1_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_1_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_1_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_1_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_1_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_1_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_3_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_3_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_3_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_3_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_3_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_3_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sync_fifo/clk_gate_mem_reg_5_/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sync_fifo/clk_gate_mem_reg_5_/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sync_fifo/clk_gate_mem_reg_5_/latch/GN (TLATNX1)      0.00       3.00 f
+  u_sync_fifo/clk_gate_mem_reg_5_/latch/Q (TLATNX1)       0.12       3.12 r
+  u_sync_fifo/clk_gate_mem_reg_5_/main_gate/A (AND2X2)     0.00      3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sync_fifo/clk_gate_mem_reg_5_/main_gate/B (AND2X2)     0.00      3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_axir/clk_gate_axi_addr_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_axir/clk_gate_axi_addr_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_axir/clk_gate_axi_addr_reg/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_axir/clk_gate_axi_addr_reg/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_axir/clk_gate_axi_addr_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_axir/clk_gate_axi_addr_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_core/clk_gate_rd_ptr_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_core/clk_gate_rd_ptr_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_core/clk_gate_rd_ptr_reg/latch/GN (TLATNX1)     0.00      3.00 f
+  u_sha256_core/clk_gate_rd_ptr_reg/latch/Q (TLATNX1)     0.12       3.12 r
+  u_sha256_core/clk_gate_rd_ptr_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_core/clk_gate_rd_ptr_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_core/u_loop/clk_gate_h6_reg_0/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_core/u_loop/clk_gate_h6_reg_0/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_core/u_loop/clk_gate_h6_reg_0/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_core/u_loop/clk_gate_h6_reg_0/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_core/u_loop/clk_gate_h6_reg_0/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_core/u_loop/clk_gate_h6_reg_0/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_core/u_loop/clk_gate_a_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_core/u_loop/clk_gate_a_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_core/u_loop/clk_gate_a_reg/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_core/u_loop/clk_gate_a_reg/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_core/u_loop/clk_gate_a_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_core/u_loop/clk_gate_a_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_cfg/clk_gate_cfg_blk_len_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_cfg/clk_gate_cfg_blk_len_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_cfg/clk_gate_cfg_blk_len_reg/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_cfg/clk_gate_cfg_blk_len_reg/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_cfg/clk_gate_cfg_blk_len_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_cfg/clk_gate_cfg_blk_len_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_cfg/clk_gate_cfg_blk_base_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_cfg/clk_gate_cfg_blk_base_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_cfg/clk_gate_cfg_blk_base_reg/latch/GN (TLATNX1)     0.00     3.00 f
+  u_sha256_cfg/clk_gate_cfg_blk_base_reg/latch/Q (TLATNX1)     0.12     3.12 r
+  u_sha256_cfg/clk_gate_cfg_blk_base_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_cfg/clk_gate_cfg_blk_base_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: u_sha256_cfg/clk_gate_prdata_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: u_sha256_cfg/clk_gate_prdata_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha256             ForQA                 slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  u_sha256_cfg/clk_gate_prdata_reg/latch/GN (TLATNX1)     0.00       3.00 f
+  u_sha256_cfg/clk_gate_prdata_reg/latch/Q (TLATNX1)      0.12       3.12 r
+  u_sha256_cfg/clk_gate_prdata_reg/main_gate/A (AND2X2)     0.00     3.12 r
+  data arrival time                                                  3.12
+
+  clock clk (fall edge)                                   2.00       2.00
+  clock network delay (ideal)                             1.00       3.00
+  clock uncertainty                                       0.08       3.08
+  u_sha256_cfg/clk_gate_prdata_reg/main_gate/B (AND2X2)     0.00     3.08 f
+  clock gating hold time                                  0.10       3.18
+  data required time                                                 3.18
+  --------------------------------------------------------------------------
+  data required time                                                 3.18
+  data arrival time                                                 -3.12
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+    Design: sha256
+
+    max_area               0.00
+  - Current Area       98643.16
+  ------------------------------
+    Slack              -98643.16  (VIOLATED)
+
+
+    Design: sha256
+
+    max_leakage_power          0.00
+  - Current Leakage Power  83104392.00
+  ----------------------------------
+    Slack                  -83104392.00  (VIOLATED)
+
+
+1

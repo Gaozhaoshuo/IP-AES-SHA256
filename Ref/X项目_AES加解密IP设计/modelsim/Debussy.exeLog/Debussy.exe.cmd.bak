@@ -1,0 +1,132 @@
+srcSourceCodeView
+debImport "-f" "flist.f" "-2001" "-top" "tb"
+srcResizeWindow 41 61 1678 1045
+srcHBSelect "tb.u_aes_top" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.u_aes_top" -delim "."
+srcHBSelect "tb.u_aes_top.u_aes_cfg" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcHBSelect "tb.u_aes_top.u_ibuf" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.u_aes_top.u_ibuf" -delim "."
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 5 2 2 -win $_nTrace1 -name "reg_file_wbe" -ctrlKey off
+srcSearchString "ibuf_empty" -win $_nTrace1 -next -case
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_waddr" -win $_nTrace1
+srcAction -pos 286 5 5 -win $_nTrace1 -name "ibuf_waddr" -ctrlKey off
+srcSearchString "ibuf_empty" -win $_nTrace1 -next -case
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_full_cmd" -win $_nTrace1
+srcTraceLoad "tb.u_aes_top.u_aes_axir.ibuf_full_cmd" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_full_cmd" -win $_nTrace1
+srcAction -pos 160 18 7 -win $_nTrace1 -name "ibuf_full_cmd" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_rptr\[2\]" -win $_nTrace1
+srcAction -pos 106 11 5 -win $_nTrace1 -name "ibuf_rptr\[2\]" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb.u_aes_top.u_aes_axir" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.u_aes_top.u_aes_axir" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_wptr" -win $_nTrace1
+srcTraceLoad "tb.u_aes_top.u_aes_axir.ibuf_wptr\[2:0\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_empty" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_wptr" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_empty" -win $_nTrace1
+srcTraceLoad "tb.u_aes_top.u_aes_flow_ctrl.ibuf_empty" -win $_nTrace1
+srcHBSelect "tb.u_aes_top.u_aes_core" -win $_nTrace1
+srcHBSelect "tb.u_aes_top.u_ibuf" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.u_aes_top.u_ibuf" -delim "."
+srcDeselectAll -win $_nTrace1
+srcAction -pos 5 2 2 -win $_nTrace1 -name "reg_file_wbe" -ctrlKey off
+srcHBSelect "tb.u_aes_top.u_obuf" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.u_aes_top.u_obuf" -delim "."
+srcDeselectAll -win $_nTrace1
+srcAction -pos 5 2 7 -win $_nTrace1 -name "reg_file_wbe" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "obuf_wdata" -win $_nTrace1
+srcAction -pos 297 5 6 -win $_nTrace1 -name "obuf_wdata" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "obuf_wptr" -win $_nTrace1
+srcHBSelect "tb.u_aes_top.u_aes_cfg" -win $_nTrace1
+srcHBSelect "tb.u_aes_top.u_aes_core" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.u_aes_top.u_aes_core" -delim "."
+srcHBSelect "tb.u_aes_top.u_aes_cfg" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.u_aes_top.u_aes_cfg" -delim "."
+srcSearchString "busy" -win $_nTrace1 -next -case
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "set_blk_end" -win $_nTrace1
+srcTraceLoad "tb.u_aes_top.u_aes_cfg.set_blk_end" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "set_blk_end" -win $_nTrace1
+srcAction -pos 123 4 4 -win $_nTrace1 -name "set_blk_end" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sta" -win $_nTrace1
+srcAction -pos 98 7 1 -win $_nTrace1 -name "sta" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcForwardHistory -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_wptr" -win $_nTrace1
+srcAction -pos 95 7 4 -win $_nTrace1 -name "ibuf_wptr" -ctrlKey off
+srcSearchString "ful" -win $_nTrace1 -next -case
+srcSelect -win $_nTrace1 -range {103 103 3 3 6 9}
+srcSearchString "ful" -win $_nTrace1 -next -case
+srcSelect -win $_nTrace1 -range {103 103 7 7 11 14}
+srcSearchString "ful" -win $_nTrace1 -next -case
+srcSelect -win $_nTrace1 -range {107 107 3 3 6 9}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_full_cmd" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_full_cmd" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_full_cmd" -win $_nTrace1
+srcCopySignalFullPath -win $_nTrace1
+srcSearchString "empty" -win $_nTrace1 -next -case
+srcBackwardHistory -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_empty" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_empty" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ibuf_empty" -win $_nTrace1
+srcCopySignalFullPath -win $_nTrace1
+srcHBSelect "tb.u_aes_top.u_obuf" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.u_aes_top.u_obuf" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "waddr" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "waddr" -win $_nTrace1
+srcAction -pos 9 1 1 -win $_nTrace1 -name "waddr" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "obuf_full" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "obuf_full" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "obuf_full" -win $_nTrace1
+srcCopySignalFullPath -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "obuf_empty" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "obuf_empty" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "obuf_empty" -win $_nTrace1
+srcCopySignalFullPath -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb.u_aes_top.u_aes_axir" -win $_nTrace1
+srcHBSelect "tb.u_aes_top.u_aes_flow_ctrl" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb.u_aes_top.u_aes_flow_ctrl" -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sta" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sta" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sta" -win $_nTrace1
+srcCopySignalFullPath -win $_nTrace1
+debExit

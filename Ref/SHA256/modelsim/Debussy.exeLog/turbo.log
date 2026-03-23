@@ -1,0 +1,5 @@
+Command Line: Debussy.exe -f flist.f -2001 -top tb
+uname(WinNT DESKTOP-4EB5SDV 6.2.9200  Intel Pentium)
+snsGetMaxWantedLicObj(): Both NOVAS_LICENSE_FILE and LM_LICENSE_FILE are not set.
+hbReload time 0 0.0 0.0 delta 96976 348160 total 19486688 24436736
+au time 21307 0.0 0.0 delta 24407568 23695360 total 24748032 24748032

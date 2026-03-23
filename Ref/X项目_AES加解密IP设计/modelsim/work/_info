@@ -1,0 +1,454 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/proj/study_demo/class_B/aes/modelsim
+T_opt
+!s110 1725412884
+VI;]heQo5[54=KmBlcVS511
+Z1 04 2 4 work tb fast 0
+=1-f832e48c297c-66d7b614-33b-3e28
+Z2 o-quiet -auto_acc_if_foreign -work work -L ./work +acc
+n@_opt
+Z3 OL;O;10.4c;61
+T_opt1
+!s110 1678530295
+Vj`L37lhZ>CaAG_C80HJUU3
+R1
+=1-e4e749345f40-640c56f7-cf-28f8
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1721896672
+VDZ`Bm<0Tg7MN>T4<l8l@E1
+R1
+=1-e4e749345f40-66a20ee0-21d-2010
+R2
+n@_opt2
+R3
+R0
+vaes_axir
+Z4 !s110 1725412882
+!i10b 1
+!s100 HkC^hn77_XR4[b@dO4dln3
+IS=R<Sc_cQSRe3hb<n7DBz0
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 dD:/new_proj/aes_enc_dec/modelsim
+w1725248536
+8../rtl/aes_axir.v
+F../rtl/aes_axir.v
+L0 28
+Z7 OL;L;10.4c;61
+r1
+!s85 0
+31
+Z8 !s108 1725412882.000000
+Z9 !s107 ../pattern//aes_sim_def.v|../rtl/reg_file_wbe_generic.v|../rtl/aes_inv_sbox_fast.v|../rtl/aes_decipher_block_fast.v|../rtl/aes_encipher_block.v|../rtl/aes_key_mem.v|../rtl/aes_sbox_lut.v|../rtl/aes_core.v|../rtl/aes_axiw.v|../rtl/aes_axir.v|../rtl/aes_flow_ctrl.v|../rtl/aes_cfg.v|../rtl/aes_top.v|../pattern/apb_ms_model.v|../pattern/axi32_slave_model.v|../pattern/tb.v|
+Z10 !s90 -reportprogress|300|-O0|-vlog01compat|-f|flist.f|
+!s101 -O0
+!i113 0
+Z11 o-O0 -vlog01compat -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 !s92 -O0 -vlog01compat +incdir+../pattern/ -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vaes_axiw
+R4
+!i10b 1
+!s100 ncQlV6:z@:D;fW9P9lE@d2
+I^1oKIj3E24>oKSSEXQzcn2
+R5
+R6
+w1725248530
+8../rtl/aes_axiw.v
+F../rtl/aes_axiw.v
+Z13 L0 25
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_cfg
+R4
+!i10b 1
+!s100 ]k:Mj:jSCWn2L7<Y4KW6f3
+Iic3Eho[?8efFc;H4NjD]O2
+R5
+R6
+w1721885921
+8../rtl/aes_cfg.v
+F../rtl/aes_cfg.v
+R13
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_core
+R4
+!i10b 1
+!s100 1OTjWRmdHXd1oeSXe1e=81
+Ic1>`d4nb=e?G:Q>4PKGNg0
+R5
+R6
+w1725334470
+8../rtl/aes_core.v
+F../rtl/aes_core.v
+Z14 L0 40
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_decipher_block
+Z15 !s110 1721889783
+!i10b 1
+!s100 1>bdnoGRLS4lWbg2A2e]72
+I8kOEV_=7d^A?ja[>XN:ml1
+R5
+Z16 dE:/new_prj/aes_enc_dec/modelsim
+Z17 w1675883700
+8../rtl/aes_decipher_block.v
+F../rtl/aes_decipher_block.v
+L0 43
+R7
+r1
+!s85 0
+31
+Z18 !s108 1721889783.000000
+Z19 !s107 ../pattern//aes_sim_def.v|../rtl/reg_file_wbe_generic.v|../rtl/aes_inv_sbox.v|../rtl/aes_decipher_block.v|../rtl/aes_encipher_block.v|../rtl/aes_key_mem.v|../rtl/aes_sbox.v|../rtl/aes_core.v|../rtl/aes_axiw.v|../rtl/aes_axir.v|../rtl/aes_flow_ctrl.v|../rtl/aes_cfg.v|../rtl/aes_top.v|../pattern/apb_ms_model.v|../pattern/axi32_slave_model.v|../pattern/tb.v|
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_decipher_block_fast
+R4
+!i10b 1
+!s100 ?M>C;j_i1`a=17N?@N=QP3
+INjaKbUU?NI`SEY^faDN1U0
+R5
+R6
+w1725411224
+8../rtl/aes_decipher_block_fast.v
+F../rtl/aes_decipher_block_fast.v
+Z20 L0 47
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_encipher_block
+R4
+!i10b 1
+!s100 43MQ9Xb2ZPhN9V5?BmiDo1
+IeAT_RTVBQfQYN?Si=z:9Y1
+R5
+R6
+w1725351158
+8../rtl/aes_encipher_block.v
+F../rtl/aes_encipher_block.v
+R20
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_flow_ctrl
+R4
+!i10b 1
+!s100 e1i<hK[L7SXhn4hVGmDNV1
+ITaJM:TfXWEjK[JgCOFPOc0
+R5
+R6
+w1725259853
+8../rtl/aes_flow_ctrl.v
+F../rtl/aes_flow_ctrl.v
+L0 26
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_inv_sbox
+R15
+!i10b 1
+!s100 Rclj3=zB;cbbh;87<]I5n0
+I1OkTO10I?lGUHoG`]lTKE3
+R5
+R16
+R17
+8../rtl/aes_inv_sbox.v
+F../rtl/aes_inv_sbox.v
+R14
+R7
+r1
+!s85 0
+31
+R18
+R19
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_inv_sbox_fast
+R4
+!i10b 1
+!s100 K7aZCL6kfEA?Yk6GKL]Jk1
+ImO2^G0N;AU4K`J_eD=8B?1
+R5
+R6
+w1721896106
+8../rtl/aes_inv_sbox_fast.v
+F../rtl/aes_inv_sbox_fast.v
+L0 38
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_key_mem
+R4
+!i10b 1
+!s100 Zd[2:eIAJjW^__eoQ?aP33
+ID_<^kg652Ze4`KCn5bi]33
+R5
+R6
+w1725336465
+8../rtl/aes_key_mem.v
+F../rtl/aes_key_mem.v
+L0 39
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_sbox
+!s110 1725238589
+!i10b 1
+!s100 Z[LE3IQizN?TGZal@?H^>0
+I<JO2>c@il3JF1A]X^N1Mk3
+R5
+R6
+w1721890023
+8../rtl/aes_sbox.v
+F../rtl/aes_sbox.v
+R14
+R7
+r1
+!s85 0
+31
+!s108 1725238589.000000
+!s107 ../pattern//aes_sim_def.v|../rtl/reg_file_wbe_generic.v|../rtl/aes_inv_sbox_fast.v|../rtl/aes_decipher_block_fast.v|../rtl/aes_encipher_block.v|../rtl/aes_key_mem.v|../rtl/aes_sbox.v|../rtl/aes_core.v|../rtl/aes_axiw.v|../rtl/aes_axir.v|../rtl/aes_flow_ctrl.v|../rtl/aes_cfg.v|../rtl/aes_top.v|../pattern/apb_ms_model.v|../pattern/axi32_slave_model.v|../pattern/tb.v|
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_sbox_cal
+!s110 1725241425
+!i10b 1
+!s100 _QClc5_n@U[^ZB;2d06n?1
+IULoRP1oCjgBd;aG50=aLU0
+R5
+R6
+w1725241423
+8../rtl/aes_sbox_cal.v
+F../rtl/aes_sbox_cal.v
+R14
+R7
+r1
+!s85 0
+31
+!s108 1725241425.000000
+!s107 ../pattern//aes_sim_def.v|../rtl/reg_file_wbe_generic.v|../rtl/aes_inv_sbox_fast.v|../rtl/aes_decipher_block_fast.v|../rtl/aes_encipher_block.v|../rtl/aes_key_mem.v|../rtl/aes_sbox_cal.v|../rtl/aes_core.v|../rtl/aes_axiw.v|../rtl/aes_axir.v|../rtl/aes_flow_ctrl.v|../rtl/aes_cfg.v|../rtl/aes_top.v|../pattern/apb_ms_model.v|../pattern/axi32_slave_model.v|../pattern/tb.v|
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_sbox_lut
+R4
+!i10b 1
+!s100 UcWY?S;n>^]zi@E:zG>DW2
+I^XmUB^IK_JgnVk4c1Z3@n2
+R5
+R6
+w1725241883
+8../rtl/aes_sbox_lut.v
+F../rtl/aes_sbox_lut.v
+R14
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaes_top
+R4
+!i10b 1
+!s100 M2O<NCT_HHE@TGeB]FC_52
+I3KoUdW[^P45QJVQ]6lB6?2
+R5
+R6
+w1725330816
+8../rtl/aes_top.v
+F../rtl/aes_top.v
+R13
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vapb_ms_model
+R4
+!i10b 1
+!s100 <g_Ljj]FYdR=z73@c5_?l0
+I8HB@@>zTZI<GlzhdMNT0T0
+R5
+R6
+w1721886968
+8../pattern/apb_ms_model.v
+F../pattern/apb_ms_model.v
+Z21 L0 29
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vaxi32_slave_model
+R4
+!i10b 1
+!s100 <4>UQQl1SO?9ao4]83RMQ1
+I>aWYe1H6:]ak^@BaMWiXd2
+R5
+R6
+w1677550612
+8../pattern/axi32_slave_model.v
+F../pattern/axi32_slave_model.v
+R21
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vreg_file_wbe
+R4
+!i10b 1
+!s100 oLEXZ@JGO3gl=9kB^hA2i2
+ID6@z:GJLR4lEIcUC?BF^>0
+R5
+R6
+w1677553604
+8../rtl/reg_file_wbe_generic.v
+F../rtl/reg_file_wbe_generic.v
+L0 6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12
+vtb
+R4
+!i10b 1
+!s100 bFDl:9Ra30?a6]j?5_Xjz0
+I76I4Yg=To`?YIad_JFf6O1
+R5
+R6
+w1677553642
+8../pattern/tb.v
+F../pattern/tb.v
+L0 31
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 0
+R11
+R12

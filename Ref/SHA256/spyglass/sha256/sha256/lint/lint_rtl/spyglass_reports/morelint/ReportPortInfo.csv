@@ -1,0 +1,27 @@
+Module Name,Module Type,Port Name,Direction,Width,Index,Comment Source,Comment 
+sha256,Top_Level,psel,INPUT,1,-,module port,--- APB configure inf
+sha256,Top_Level,penable,INPUT,1,-,-,-
+sha256,Top_Level,paddr,INPUT,8,[7:0],port definition,byte addr
+sha256,Top_Level,pwrite,INPUT,1,-,-,-
+sha256,Top_Level,pwdata,INPUT,32,[31:0],-,-
+sha256,Top_Level,pready,OUTPUT,1,-,-,-
+sha256,Top_Level,prdata,OUTPUT,32,[31:0],-,-
+sha256,Top_Level,arid,OUTPUT,4,[3:0],port definition,0
+sha256,Top_Level,araddr,OUTPUT,32,[31:0],-,-
+sha256,Top_Level,arlen,OUTPUT,4,[3:0],-,-
+sha256,Top_Level,arsize,OUTPUT,3,[2:0],-,-
+sha256,Top_Level,arburst,OUTPUT,2,[1:0],-,-
+sha256,Top_Level,arlock,OUTPUT,2,[1:0],-,-
+sha256,Top_Level,arcache,OUTPUT,4,[3:0],-,-
+sha256,Top_Level,arprot,OUTPUT,3,[2:0],-,-
+sha256,Top_Level,arvalid,OUTPUT,1,-,-,-
+sha256,Top_Level,arready,INPUT,1,-,-,-
+sha256,Top_Level,rid,INPUT,4,[3:0],-,-
+sha256,Top_Level,rdata,INPUT,32,[31:0],-,-
+sha256,Top_Level,rresp,INPUT,2,[1:0],-,-
+sha256,Top_Level,rlast,INPUT,1,-,-,-
+sha256,Top_Level,rvalid,INPUT,1,-,-,-
+sha256,Top_Level,rready,OUTPUT,1,-,-,-
+sha256,Top_Level,intr,OUTPUT,1,-,-,-
+sha256,Top_Level,clk,INPUT,1,-,-,-
+sha256,Top_Level,rstn,INPUT,1,-,-,-

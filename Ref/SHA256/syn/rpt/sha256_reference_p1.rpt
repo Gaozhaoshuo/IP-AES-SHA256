@@ -1,0 +1,839 @@
+ 
+****************************************
+Report : reference
+Design : sha256
+Version: O-2018.06-SP1
+Date   : Fri Sep 15 10:31:25 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INVX3              slow           5.092200      22    112.028396  
+TIEHI              slow           3.394800       1      3.394800  
+TIELO              slow           3.394800       1      3.394800  
+sha256_axir                    5160.095997       1   5160.095997  h, n
+sha256_cfg                     6326.209665       1   6326.209665  h, n
+sha256_core                   65894.765840       1  65894.765840  h, n
+sha256_flow_ctl                 577.115990       1    577.115990  h, n
+sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4 18206.312535       1 18206.312535 h, n
+-----------------------------------------------------------------------------
+Total 8 references                                  96283.318023
+
+****************************************
+Design: sha256_axir 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AO21X1             slow           8.487000       1      8.487000  
+AO22X1             slow          10.184400      62    631.432775  
+AOI2BB2X1          slow          10.184400       1     10.184400  
+AOI211X1           slow           8.487000       4     33.948002  
+BUFX2              slow           6.789600      38    258.004796  
+BUFX20             slow          28.855801       1     28.855801  
+CLKINVX1           slow           3.394800       1      3.394800  
+CLKMX2X4           slow          15.276600       4     61.106400  
+DFFQX1             slow          25.461000      45   1145.745020  n
+DFFQX4             slow          33.948002      26    882.648048  n
+DFFRX1             slow          32.250599       3     96.751797  n
+DFFRX4             slow          47.527199       1     47.527199  n
+INVX1              slow           3.394800      19     64.501199  
+INVX3              slow           5.092200       4     20.368799  
+MXI2X1             slow          11.881800       2     23.763599  
+NAND2X1            slow           5.092200       8     40.737598  
+NAND2X2            slow           8.487000       1      8.487000  
+NAND3BX1           slow           8.487000       1      8.487000  
+NAND4X1            slow           8.487000       1      8.487000  
+NOR2X1             slow           5.092200       5     25.460999  
+NOR2X2             slow           8.487000       1      8.487000  
+NOR3X1             slow           6.789600       3     20.368800  
+NOR4X1             slow           8.487000       2     16.974001  
+OAI2BB1X1          slow           8.487000       2     16.974001  
+OAI211X1           slow           8.487000       1      8.487000  
+SNPS_CLOCK_GATE_HIGH_sha256_axir_1    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sha256_axir_2    32.250601       1    32.250601 h, n
+TIELO              slow           3.394800       1      3.394800  
+sha256_axir_DP_OP_47J2_123_7638_0  1614.227358       1  1614.227358 h
+-----------------------------------------------------------------------------
+Total 29 references                                  5160.095997
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sha256_axir_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sha256_axir_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X2              slow           8.487000       1      8.487000  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     32.250601
+
+****************************************
+Design: sha256_axir_DP_OP_47J2_123_7638_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADDHX1             slow          20.368799       5    101.843996  r
+AND2X1             slow           6.789600       1      6.789600  
+AOI21X1            slow           8.487000       2     16.974001  
+BUFX2              slow           6.789600       2     13.579200  
+INVX1              slow           3.394800      64    217.267197  
+NAND2X1            slow           5.092200      49    249.517790  
+NOR2X1             slow           5.092200      58    295.347589  
+OAI21X1            slow           8.487000       6     50.922003  
+OR2X1              slow           6.789600       3     20.368800  
+XNOR2X1            slow          11.881800      25    297.044992  
+XOR2X1             slow          11.881800      29    344.572191  
+-----------------------------------------------------------------------------
+Total 11 references                                  1614.227358
+
+****************************************
+Design: sha256_cfg 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+AO22X1             slow          10.184400      34    346.269587  
+AOI2BB1X1          slow           8.487000       1      8.487000  
+AOI22X1            slow          10.184400      93    947.149163  
+AOI31X1            slow          10.184400       1     10.184400  
+AOI211X1           slow           8.487000      33    280.071015  
+BUFX2              slow           6.789600      28    190.108797  
+CLKBUFX3           slow           6.789600       2     13.579200  
+CLKINVX1           slow           3.394800       3     10.184400  
+DFFRX1             slow          32.250599      65   2096.288929  n
+DFFRX4             slow          47.527199      33   1568.397560  n
+DFFSX1             slow          30.553200       1     30.553200  n
+INVX1              slow           3.394800       7     23.763600  
+INVX3              slow           5.092200       1      5.092200  
+NAND2X1            slow           5.092200       7     35.645399  
+NAND3X1            slow           6.789600      34    230.846396  
+NAND4X1            slow           8.487000       1      8.487000  
+NOR2BX1            slow           6.789600       1      6.789600  
+NOR2X1             slow           5.092200       9     45.829798  
+NOR3X1             slow           6.789600       1      6.789600  
+NOR4X1             slow           8.487000       1      8.487000  
+OAI2BB1X1          slow           8.487000      31    263.097014  
+OAI22X1            slow          10.184400       1     10.184400  
+OAI211X1           slow           8.487000       1      8.487000  
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_39    32.250601       1    32.250601 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_40    32.250601       1    32.250601 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_41    32.250601       1    32.250601 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_42    32.250601       1    32.250601 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_43    32.250601       1    32.250601 h, n
+TIELO              slow           3.394800       1      3.394800  
+-----------------------------------------------------------------------------
+Total 30 references                                  6326.209665
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_39 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+OR2X2              slow           8.487000       1      8.487000  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     32.250601
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_40 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+OR2X2              slow           8.487000       1      8.487000  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     32.250601
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_41 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X2              slow           8.487000       1      8.487000  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     32.250601
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_42 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X2              slow           8.487000       1      8.487000  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     32.250601
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_43 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X2              slow           8.487000       1      8.487000  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     32.250601
+
+****************************************
+Design: sha256_core 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+SNPS_CLOCK_GATE_HIGH_sha256_loop_3    32.250601       1    32.250601 h, n
+TIELO              slow           3.394800       1      3.394800  
+sha256_k_lut                   3146.979614       1   3146.979614  h, n
+sha256_loop                   44084.872993       1  44084.872993  h, n
+sha256_w_reg                  18627.267833       1  18627.267833  h, n
+-----------------------------------------------------------------------------
+Total 5 references                                  65894.765840
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sha256_loop_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X2              slow           8.487000       1      8.487000  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     32.250601
+
+****************************************
+Design: sha256_k_lut 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       4     27.158400  
+AND3X1             slow           8.487000       1      8.487000  
+AND4X1             slow          10.184400       4     40.737598  
+AO21X1             slow           8.487000       1      8.487000  
+AOI211X1           slow           8.487000       6     50.922003  
+BUFX2              slow           6.789600       2     13.579200  
+DFFQX1             slow          25.461000      32    814.752014  n
+INVX1              slow           3.394800      84    285.163196  
+NAND2BX1           slow           6.789600      10     67.895999  
+NAND2X1            slow           5.092200      62    315.716388  
+NAND3BX1           slow           8.487000       6     50.922003  
+NAND3X1            slow           6.789600      19    129.002398  
+NAND4BX1           slow          10.184400      14    142.581594  
+NAND4X1            slow           8.487000      25    212.175012  
+NOR2BX1            slow           6.789600       7     47.527199  
+NOR2X1             slow           5.092200      61    310.624188  
+NOR3X1             slow           6.789600      15    101.843998  
+NOR4BX1            slow          11.881800       1     11.881800  
+NOR4X1             slow           8.487000      38    322.506018  
+OAI2BB1X1          slow           8.487000       1      8.487000  
+OAI21X1            slow           8.487000       2     16.974001  
+OAI211X1           slow           8.487000      12    101.844006  
+OR2X1              slow           6.789600       5     33.947999  
+OR4X2              slow          11.881800       2     23.763599  
+-----------------------------------------------------------------------------
+Total 24 references                                  3146.979614
+
+****************************************
+Design: sha256_loop 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600     120    814.751987  
+AO21X1             slow           8.487000      79    670.473037  
+AO22X1             slow          10.184400     120   1222.127953  
+AO22X4             slow          15.276600       1     15.276600  
+AOI211X1           slow           8.487000       4     33.948002  
+BUFX2              slow           6.789600      48    325.900795  
+CLKBUFX3           slow           6.789600       5     33.947999  
+CLKINVX1           slow           3.394800       6     20.368800  
+CLKINVX3           slow           5.092200       1      5.092200  
+CLKMX2X2           slow          13.579200      16    217.267197  
+DFFHQX2            slow          35.645401       1     35.645401  n
+DFFHQX4            slow          45.829800       4    183.319199  n
+DFFQX1             slow          25.461000     479  12195.819212  n
+DFFQX2             slow          27.158400      22    597.484791  n
+DFFQX4             slow          33.948002       6    203.688011  n
+DFFRX1             slow          32.250599       9    290.255390  n
+INVX1              slow           3.394800     198    672.170390  
+INVX3              slow           5.092200       2     10.184400  
+MX2X1              slow          13.579200      16    217.267197  
+NAND2BX1           slow           6.789600       1      6.789600  
+NAND2BX2           slow          10.184400       1     10.184400  
+NAND2X1            slow           5.092200     142    723.092372  
+NAND2X2            slow           8.487000       1      8.487000  
+NOR2BX1            slow           6.789600       1      6.789600  
+NOR2X1             slow           5.092200       5     25.460999  
+OA21X1             slow          10.184400       1     10.184400  
+OAI2BB1X1          slow           8.487000      91    772.317042  
+OAI21X1            slow           8.487000      32    271.584015  
+OAI211X1           slow           8.487000     135   1145.745063  
+SNPS_CLOCK_GATE_HIGH_sha256_loop_0    32.250601       1    32.250601 h, n
+SNPS_CLOCK_GATE_HIGH_sha256_loop_1    32.250601       1    32.250601 h, n
+TIELO              slow           3.394800       1      3.394800  
+XNOR2X1            slow          11.881800       1     11.881800  
+XOR2X1             slow          11.881800     126   1497.106762  
+XOR2X2             slow          20.368799       2     40.737598  
+sha256_loop_DP_OP_71J1_122_6292_0  9962.040674       1  9962.040674 h
+sha256_loop_DW01_add_0         1469.948388       1   1469.948388  h
+sha256_loop_DW01_add_1         1469.948388       1   1469.948388  h
+sha256_loop_DW01_add_2         1469.948388       1   1469.948388  h
+sha256_loop_DW01_add_3         1469.948388       1   1469.948388  h
+sha256_loop_DW01_add_4         1469.948388       1   1469.948388  h
+sha256_loop_DW01_add_5         1469.948388       1   1469.948388  h
+sha256_loop_DW01_add_6         1469.948388       1   1469.948388  h
+sha256_loop_DW01_add_7         1469.948388       1   1469.948388  h
+-----------------------------------------------------------------------------
+Total 44 references                                 44084.872993
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sha256_loop_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X2              slow           8.487000       1      8.487000  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     32.250601
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sha256_loop_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X2              slow           8.487000       1      8.487000  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     32.250601
+
+****************************************
+Design: sha256_loop_DP_OP_71J1_122_6292_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADDFHX1            slow          39.040199       8    312.321594  r
+ADDFHX2            slow          54.316799       2    108.633598  r
+ADDFX1             slow          35.645401     100   3564.540100  r
+ADDFX2             slow          35.645401      14    499.035614  r
+ADDHX1             slow          20.368799       3     61.106398  r
+AO21X1             slow           8.487000       1      8.487000  
+AOI21X1            slow           8.487000      44    373.428020  
+AOI21X2            slow          13.579200       2     27.158400  
+AOI21X4            slow          18.671400       2     37.342800  
+BUFX4              slow           8.487000       1      8.487000  
+BUFX8              slow          13.579200       1     13.579200  
+CLKINVX2           slow           5.092200       1      5.092200  
+CMPR42X1           slow          61.106400      28   1710.979187  r
+CMPR42X2           slow          67.896004       1     67.896004  r
+INVX1              slow           3.394800     119    403.981194  
+NAND2X1            slow           5.092200     149    758.737771  
+NAND2X2            slow           8.487000       1      8.487000  
+NOR2X1             slow           5.092200      85    432.836983  
+NOR2X2             slow           8.487000       5     42.435002  
+OA21X1             slow          10.184400       1     10.184400  
+OAI2BB1X1          slow           8.487000       1      8.487000  
+OAI21X1            slow           8.487000      64    543.168030  
+OAI21X2            slow          13.579200       5     67.895999  
+OR2X1              slow           6.789600       4     27.158400  
+XNOR2X1            slow          11.881800      41    487.153788  
+XOR2X1             slow          11.881800      29    344.572191  
+XOR3X1             slow          28.855801       1     28.855801  
+-----------------------------------------------------------------------------
+Total 27 references                                  9962.040674
+
+****************************************
+Design: sha256_loop_DW01_add_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+AO21X1             slow           8.487000       1      8.487000  
+AOI21X1            slow           8.487000      20    169.740009  
+INVX1              slow           3.394800      45    152.765998  
+NAND2X1            slow           5.092200      66    336.085187  
+NOR2X1             slow           5.092200      30    152.765994  
+OAI21X1            slow           8.487000      23    195.201011  
+OR2X1              slow           6.789600      10     67.895999  
+XNOR2X1            slow          11.881800      13    154.463396  
+XOR2X1             slow          11.881800      19    225.754194  
+-----------------------------------------------------------------------------
+Total 10 references                                  1469.948388
+
+****************************************
+Design: sha256_loop_DW01_add_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+AO21X1             slow           8.487000       1      8.487000  
+AOI21X1            slow           8.487000      20    169.740009  
+INVX1              slow           3.394800      45    152.765998  
+NAND2X1            slow           5.092200      66    336.085187  
+NOR2X1             slow           5.092200      30    152.765994  
+OAI21X1            slow           8.487000      23    195.201011  
+OR2X1              slow           6.789600      10     67.895999  
+XNOR2X1            slow          11.881800      13    154.463396  
+XOR2X1             slow          11.881800      19    225.754194  
+-----------------------------------------------------------------------------
+Total 10 references                                  1469.948388
+
+****************************************
+Design: sha256_loop_DW01_add_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+AO21X1             slow           8.487000       1      8.487000  
+AOI21X1            slow           8.487000      20    169.740009  
+INVX1              slow           3.394800      45    152.765998  
+NAND2X1            slow           5.092200      66    336.085187  
+NOR2X1             slow           5.092200      30    152.765994  
+OAI21X1            slow           8.487000      23    195.201011  
+OR2X1              slow           6.789600      10     67.895999  
+XNOR2X1            slow          11.881800      13    154.463396  
+XOR2X1             slow          11.881800      19    225.754194  
+-----------------------------------------------------------------------------
+Total 10 references                                  1469.948388
+
+****************************************
+Design: sha256_loop_DW01_add_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+AO21X1             slow           8.487000       1      8.487000  
+AOI21X1            slow           8.487000      20    169.740009  
+INVX1              slow           3.394800      45    152.765998  
+NAND2X1            slow           5.092200      66    336.085187  
+NOR2X1             slow           5.092200      30    152.765994  
+OAI21X1            slow           8.487000      23    195.201011  
+OR2X1              slow           6.789600      10     67.895999  
+XNOR2X1            slow          11.881800      13    154.463396  
+XOR2X1             slow          11.881800      19    225.754194  
+-----------------------------------------------------------------------------
+Total 10 references                                  1469.948388
+
+****************************************
+Design: sha256_loop_DW01_add_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+AO21X1             slow           8.487000       1      8.487000  
+AOI21X1            slow           8.487000      20    169.740009  
+INVX1              slow           3.394800      45    152.765998  
+NAND2X1            slow           5.092200      66    336.085187  
+NOR2X1             slow           5.092200      30    152.765994  
+OAI21X1            slow           8.487000      23    195.201011  
+OR2X1              slow           6.789600      10     67.895999  
+XNOR2X1            slow          11.881800      13    154.463396  
+XOR2X1             slow          11.881800      19    225.754194  
+-----------------------------------------------------------------------------
+Total 10 references                                  1469.948388
+
+****************************************
+Design: sha256_loop_DW01_add_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+AO21X1             slow           8.487000       1      8.487000  
+AOI21X1            slow           8.487000      20    169.740009  
+INVX1              slow           3.394800      45    152.765998  
+NAND2X1            slow           5.092200      66    336.085187  
+NOR2X1             slow           5.092200      30    152.765994  
+OAI21X1            slow           8.487000      23    195.201011  
+OR2X1              slow           6.789600      10     67.895999  
+XNOR2X1            slow          11.881800      13    154.463396  
+XOR2X1             slow          11.881800      19    225.754194  
+-----------------------------------------------------------------------------
+Total 10 references                                  1469.948388
+
+****************************************
+Design: sha256_loop_DW01_add_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+AO21X1             slow           8.487000       1      8.487000  
+AOI21X1            slow           8.487000      20    169.740009  
+INVX1              slow           3.394800      45    152.765998  
+NAND2X1            slow           5.092200      66    336.085187  
+NOR2X1             slow           5.092200      30    152.765994  
+OAI21X1            slow           8.487000      23    195.201011  
+OR2X1              slow           6.789600      10     67.895999  
+XNOR2X1            slow          11.881800      13    154.463396  
+XOR2X1             slow          11.881800      19    225.754194  
+-----------------------------------------------------------------------------
+Total 10 references                                  1469.948388
+
+****************************************
+Design: sha256_loop_DW01_add_7 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+AO21X1             slow           8.487000       1      8.487000  
+AOI21X1            slow           8.487000      20    169.740009  
+INVX1              slow           3.394800      45    152.765998  
+NAND2X1            slow           5.092200      66    336.085187  
+NOR2X1             slow           5.092200      30    152.765994  
+OAI21X1            slow           8.487000      23    195.201011  
+OR2X1              slow           6.789600      10     67.895999  
+XNOR2X1            slow          11.881800      13    154.463396  
+XOR2X1             slow          11.881800      19    225.754194  
+-----------------------------------------------------------------------------
+Total 10 references                                  1469.948388
+
+****************************************
+Design: sha256_w_reg 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CLKBUFX3           slow           6.789600       4     27.158400  
+CLKMX2X2           slow          13.579200       1     13.579200  
+DFFQX1             slow          25.461000     512  13036.032227  n
+MX2X1              slow          13.579200      31    420.955194  
+XOR2X1             slow          11.881800     115   1366.406965  
+sha256_w_reg_DP_OP_7J3_122_6642_0  3763.135848       1  3763.135848 h
+-----------------------------------------------------------------------------
+Total 6 references                                  18627.267833
+
+****************************************
+Design: sha256_w_reg_DP_OP_7J3_122_6642_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADDFX1             slow          35.645401      59   2103.078659  r
+ADDHX1             slow          20.368799       2     40.737598  r
+AO21X1             slow           8.487000       1      8.487000  
+AOI21X1            slow           8.487000      21    178.227010  
+INVX1              slow           3.394800      49    166.345197  
+NAND2X1            slow           5.092200      68    346.269587  
+NOR2X1             slow           5.092200      39    198.595792  
+OAI21X1            slow           8.487000      28    237.636013  
+OR2X1              slow           6.789600       5     33.947999  
+XNOR2X1            slow          11.881800      16    190.108795  
+XOR2X1             slow          11.881800      17    201.990595  
+XOR3X1             slow          28.855801       2     57.711601  
+-----------------------------------------------------------------------------
+Total 12 references                                  3763.135848
+
+****************************************
+Design: sha256_flow_ctl 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X4             slow          10.184400       1     10.184400  
+AO22X1             slow          10.184400       2     20.368799  
+BUFX2              slow           6.789600      32    217.267197  
+CLKBUFX3           slow           6.789600       1      6.789600  
+DFFRX1             slow          32.250599       5    161.252995  n
+DFFSX1             slow          30.553200       1     30.553200  n
+INVX1              slow           3.394800       2      6.789600  
+INVX3              slow           5.092200       1      5.092200  
+NAND3X1            slow           6.789600       2     13.579200  
+NAND4X1            slow           8.487000       1      8.487000  
+NOR2BX2            slow          10.184400       1     10.184400  
+NOR2X1             slow           5.092200       5     25.460999  
+NOR3X1             slow           6.789600       1      6.789600  
+OAI2BB1X1          slow           8.487000       3     25.461001  
+OAI21X1            slow           8.487000       1      8.487000  
+OAI211X1           slow           8.487000       1      8.487000  
+XOR2X1             slow          11.881800       1     11.881800  
+-----------------------------------------------------------------------------
+Total 17 references                                   577.115990
+
+****************************************
+Design: sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       2     13.579200  
+AND3X1             slow           8.487000       1      8.487000  
+AO22X1             slow          10.184400     256   2607.206299  
+BUFX2              slow           6.789600      77    522.799192  
+DFFQX1             slow          25.461000     512  13036.032227  n
+DFFRX1             slow          32.250599      10    322.505989  n
+INVX1              slow           3.394800       9     30.553200  
+NAND2X1            slow           5.092200      37    188.411393  
+NAND3X2            slow          11.881800       1     11.881800  
+NOR2BX1            slow           6.789600       1      6.789600  
+NOR2X1             slow           5.092200      22    112.028396  
+NOR3X1             slow           6.789600       2     13.579200  
+NOR3X2             slow          10.184400       1     10.184400  
+NOR4X1             slow           8.487000      64    543.168030  
+OAI21X1            slow           8.487000       1      8.487000  
+OAI211X1           slow           8.487000       1      8.487000  
+OR2X1              slow           6.789600       6     40.737599  
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_0    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_20    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_21    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_22    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_23    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_24    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_25    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_26    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_27    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_28    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_29    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_30    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_31    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_32    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_33    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_34    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_35    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_36    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_37    30.553201       1    30.553201 h, n
+SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_38    30.553201       1    30.553201 h, n
+TIELO              slow           3.394800       1      3.394800  
+XNOR2X1            slow          11.881800       6     71.290798  
+XOR2X1             slow          11.881800       3     35.645399  
+-----------------------------------------------------------------------------
+Total 40 references                                 18206.312535
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_20 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_21 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_22 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_23 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_24 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_25 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_26 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_27 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_28 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_29 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_30 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_31 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_32 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_33 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_34 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_35 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_36 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_37 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_sync_fifo_FIFO_WIDTH32_FIFO_DEPTH16_FIFO_ADDR_BIT4_38 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X2             slow           6.789600       1      6.789600  
+OR2X1              slow           6.789600       1      6.789600  
+TLATNX1            slow          16.974001       1     16.974001  n
+-----------------------------------------------------------------------------
+Total 3 references                                     30.553201
+1
